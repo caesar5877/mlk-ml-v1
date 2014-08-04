@@ -19,7 +19,7 @@ if($dopost!='save')
 	$keywords = $writer = $source = $body = $description = $title = '';
 
 	//采集单个网页
-	if(ereg('^http://',$geturl))
+    if(preg_match("#^http:\/\/#", $geturl))
 	{
 		require_once(DEDEADMIN."/inc/inc_coonepage.php");
 		$redatas = CoOnePage($geturl);
@@ -166,11 +166,11 @@ else if($dopost=='save')
 	}
 
 	//处理图片文档的自定义属性
-	if($litpic!='' && !ereg('p',$flag))
+    if($litpic!='' && !preg_match("#p#", $flag))
 	{
 		$flag = ($flag=='' ? 'p' : $flag.',p');
 	}
-	if($redirecturl!='' && !ereg('j',$flag))
+    if($redirecturl!='' && !preg_match("#j#", $flag))
 	{
 		$flag = ($flag=='' ? 'j' : $flag.',j');
 	}

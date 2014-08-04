@@ -19,10 +19,10 @@ if($action=='save')
 	$dfvalue = trim($vdefault);
 	$isnull = ($isnull==1 ? "true" : "false");
 	$mxlen = $maxlength;
-	
-	if(ereg('^(select|radio|checkbox)$',$dtype))
+
+    if(preg_match("#^(select|radio|checkbox)$#i", $dtype))
 	{
-		if(!ereg(',',$dfvalue))
+        if(!preg_match("#,#", $dfvalue))
 		{
 			ShowMsg("你设定了字段为 {$dtype} 类型，必须在默认值中指定元素列表，如：'a,b,c' ","-1");
 			exit();

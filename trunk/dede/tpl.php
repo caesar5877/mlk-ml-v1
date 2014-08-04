@@ -85,7 +85,7 @@ else if($action == 'saveedit')
 		ShowMsg('未指定要编辑的文件或文件名不合法', '-1');
 		exit();
 	}
-	if(!ereg("\.htm$",$filename))
+    if(!preg_match("#\.htm$#", $filename))
 	{
 		ShowMsg('DEDE模板文件，文件名必须用.htm结尾！', '-1');
 		exit();
@@ -163,12 +163,12 @@ else if ($action == 'uploadok')
 	}
 	else
 	{
-		if( !ereg("\.(htm|html)$", $upfile_name) )
+        if( !preg_match("#\.(htm|html)$#", $upfile_name) )
 		{
 			ShowMsg("DedeCms模板只能用 .htm 或 .html扩展名！","-1");
 		  exit();
 		}
-		if( ereg("[\\/]",$upfile_name) )
+        if( preg_match("#[\\\\\/]#", $upfile_name) )
 		{
 			ShowMsg("模板文件名有非法字符，禁止上传！","-1");
 		  exit();

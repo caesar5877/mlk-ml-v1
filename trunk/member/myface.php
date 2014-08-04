@@ -12,7 +12,7 @@ if(!isset($backurl))
 if($dopost=='save')
 {
 	$userdir = $cfg_user_dir.'/'.$cfg_ml->M_ID;
-	if(!ereg('^'.$userdir,$oldface))
+	if(!preg_match("#^#".$userdir,$oldface))
 	{
 		$oldface = '';
 	}
@@ -20,7 +20,7 @@ if($dopost=='save')
 	{
 		if($faceurl!='')
 		{
-			if( (ereg(':',$faceurl) && !eregi('^http:',$faceurl)) || !eregi("\.(jpg|png|gif)",$faceurl))
+			if( (preg_match("#:#",$faceurl) && !preg_match("#^http:\'#i",$faceurl)) || !preg_match("#\.(jpg|png|gif)#i",$faceurl))
 			{
 				ShowMsg("你指定的图片网址存在问题！","-1");
 				exit();

@@ -12,7 +12,7 @@ if($dopost=="save")
 {
 	foreach($_POST as $k=>$v)
 	{
-		if(ereg("^edit___",$k))
+        if(preg_match("#^edit___#", $k))
 		{
 			$v = cn_substrR(${$k},500);
 		}

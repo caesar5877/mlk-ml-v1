@@ -203,7 +203,7 @@ function lib_arclistsg(&$ctag,&$refObj)
 				}
 				$row['picname'] = $row['litpic'];
 				
-				$row['image'] = "<img src='".$row['picname']."' border='0' alt='".ereg_replace("['><]","",$row['title'])."' />";
+				$row['image'] = "<img src='".$row['picname']."' border='0' alt='".preg_replace("#['><]#","",$row['title'])."' />";
 				$row['imglink'] = "<a href='".$row['filename']."'>".$row['image']."</a>";
 
 				$row['stime'] = GetDateMK($row['pubdate']);

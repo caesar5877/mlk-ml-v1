@@ -35,7 +35,7 @@ function GetFormItem($ctag,$admintype='admin')
 	else if($fieldType=='stepselect')
 	{
 			global $hasSetEnumJs,$cfg_cmspath;
-			$cmspath = ( (empty($cfg_cmspath) || ereg('[/$]', $cfg_cmspath)) ? $cfg_cmspath.'/' : $cfg_cmspath );
+            $cmspath = ( (empty($cfg_cmspath) || preg_match('/[/$]/', $cfg_cmspath)) ? $cfg_cmspath.'/' : $cfg_cmspath );
 			$myformItem = '';
 			$myformItem .= "<input type='hidden' id='hidden_{$fieldname}' name='{$fieldname}' value='0' />\r\n";
 			$myformItem .= "<span id='span_{$fieldname}'></span>\r\n";
@@ -202,7 +202,7 @@ function GetFieldValue($dvalue,$dtype,$aid=0,$job='add',$addvar='',$admintype='a
 		if($job=='edit')
 		{
 			$addvarDirs = explode('/',$addvar);
-			$addvarDir = ereg_replace("/".$addvarDirs[count($addvarDirs)-1]."$","",$addvar);
+			$addvarDir = preg_replace("#\/".$addvarDirs[count($addvarDirs)-1]."$#","",$addvar);
 			$mdir = $cfg_basedir.$addvarDir;
 			if(!is_dir($mdir))
 			{
@@ -324,7 +324,7 @@ function GetFormItemValue($ctag,$fvalue,$admintype='admin')
 	}
 	$ftype = $ctag->GetAtt('type');
 	$myformItem = '';
-	if(eregi('select|radio|checkbox',$ftype))
+    if(preg_match("/select|radio|checkbox/i", $ftype))
 	{
 		$items = explode(',',$ctag->GetAtt('default'));
 	}
@@ -349,7 +349,7 @@ function GetFormItemValue($ctag,$fvalue,$admintype='admin')
 	else if($ctag->GetAtt("type")=='stepselect')
 	{
 		global $hasSetEnumJs,$cfg_cmspath;
-		$cmspath = ( (empty($cfg_cmspath) || ereg('[/$]', $cfg_cmspath)) ? $cfg_cmspath.'/' : $cfg_cmspath );
+        $cmspath = ( (empty($cfg_cmspath) || preg_match('/[/$]/', $cfg_cmspath)) ? $cfg_cmspath.'/' : $cfg_cmspath );
 		$myformItem = '';
 		$myformItem .= "<input type='hidden' id='hidden_{$fieldname}' name='{$fieldname}' value='{$fvalue}' />\r\n";
 		$myformItem .= "<span id='span_{$fieldname}'></span>\r\n";

@@ -67,7 +67,7 @@ if($dopost=='bak')
 		$dh = dir($bkdir);
 		while($filename=$dh->read())
 		{
-			if(!ereg("txt$",$filename))
+            if(!preg_match("#txt$#", $filename))
 			{
 				continue;
 			}

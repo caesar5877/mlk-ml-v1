@@ -7,7 +7,7 @@ $templetdir = $cfg_basedir.$cfg_templets_dir;
 $templetdird = $templetdir.'/'.$acdir;
 $templeturld = $cfg_templeturl.'/'.$acdir;
 
-if(ereg("\.",$acdir))
+if(preg_match("#\.#", $acdir))
 {
 	ShowMsg('Not Allow dir '.$acdir.'!','-1');
 	exit();

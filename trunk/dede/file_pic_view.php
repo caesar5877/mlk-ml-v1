@@ -35,13 +35,13 @@ function ListPic($truePath,$nowPath)
 	$rowdd=0;
 	$rowdd++;
 	$imgfile="";
-	$truePath = ereg_replace("/$","",ereg_replace("\\{1,}","/",trim($truePath)));
-	$nowPath = ereg_replace("/$","",ereg_replace("/{1,}","/",trim($nowPath)));
+    $truePath = preg_replace("#\/$#", "", preg_replace("#\\\\{1,}#", "/", trim($truePath)));
+    $nowPath = preg_replace("#\/$#", "", preg_replace("#\/{1,}#", "/", trim($nowPath)));
 	$dh = dir($truePath);
 	echo("<tr align='center'>\n");
 	while($filename=$dh->read())
 	{
-		if(!ereg("\.$",$filename))
+        if(!preg_match("#\.$#", $filename))
 		{
 			$fullName = $truePath."/".$filename;
 			$fileUrl =  $nowPath."/".$filename;
@@ -145,7 +145,7 @@ function GetImgFile($truePath,$nowPath,$fileName)
 
 function IsImg($fileName)
 {
-	if(ereg("\.(jpg|gif|png)$",$fileName)) return 1;
+    if(preg_match("#\.(jpg|gif|png)$#", $fileName)) return 1;
 	else return 0;
 }
 ?>

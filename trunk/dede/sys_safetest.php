@@ -113,7 +113,7 @@ else if($action=='clear')
 	 $d = DEDEROOT.$cfg_tplcache_dir;
 	 AjaxHead();
 	 sleep(1);
-	 if(ereg('data/',$cfg_tplcache_dir) && file_exists($d) && is_dir($d))
+     if(preg_match("#data\/#", $cfg_tplcache_dir) && file_exists($d) && is_dir($d))
 	 {
 	   $dh = dir($d);
 	   while($filename = $dh->read())

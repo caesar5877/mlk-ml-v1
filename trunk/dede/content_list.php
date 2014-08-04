@@ -161,7 +161,7 @@ left join `#@__member` mb on mb.mid=arc.mid
 $whereSql
 order by arc.id desc";
 
-if(empty($f) || !ereg('form', $f)) $f = 'form1.arcid1';
+if(empty($f) || !preg_match("#form#", $f)) $f = 'form1.arcid1';
 
 $dlist = new DataListCP();
 $dlist->pageSize = 30;

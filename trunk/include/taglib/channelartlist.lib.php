@@ -42,7 +42,7 @@ function lib_channelartlist(&$ctag,&$refObj)
 		$tmptypeids[] = $row;
 	}
 	
-	if( ereg(',',$typeid) )
+	if( preg_match("#,#",$typeid) )
 	{
 		$nids = explode(',', $typeid);
 		foreach($nids as $tid)

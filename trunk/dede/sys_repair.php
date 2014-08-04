@@ -42,7 +42,7 @@ else if($dopost==1)
 	$msg = '';
 	$dsql->Execute('n',"Show Create Table `#@__arctiny` ");
 	$row = $dsql->GetArray('n', MYSQL_BOTH);
-	if(!eregi('typeid2', $row[1]))
+	if(!preg_match('#typeid2#i', $row[1]))
 	{
 		$rs = $dsql->ExecuteNoneQuery(" ALTER TABLE `#@__arctiny`  ADD `typeid2` SMALLINT( 5 ) UNSIGNED DEFAULT '0' NOT NULL AFTER `typeid` ; ");
 		if($rs) $msg .= "◎微表 #@__arctiny 没有副栏目字段typeid2，修复成功！<br />";
@@ -54,7 +54,7 @@ else if($dopost==1)
 	}
 	$dsql->Execute('n',"Show Create Table `#@__archives` ");
 	$row = $dsql->GetArray('n', MYSQL_BOTH);
-	if(!eregi('typeid2', $row[1]))
+	if(!preg_match('#typeid2#i', $row[1]))
 	{
 		$rs = $dsql->ExecuteNoneQuery(" ALTER TABLE `#@__archives`  ADD `typeid2` SMALLINT( 5 ) UNSIGNED DEFAULT '0' NOT NULL AFTER `typeid` ; ");
 		if($rs) $msg .= "主表 #@__archives 没有副栏目字段typeid2，修复成功！<br />";

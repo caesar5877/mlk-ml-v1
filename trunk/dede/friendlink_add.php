@@ -33,7 +33,7 @@ if($dopost=="add")
 	}
 	
 	//强制检测用户友情链接分类是否数据结构不符
-	if(empty($typeid) || ereg("[^0-9]", $typeid))
+    if(empty($typeid) || preg_match("#[^0-9]#", $typeid))
 	{
 		$typeid = 0;
 		$dsql->ExecuteNoneQuery("ALTER TABLE `#@__flinktype` CHANGE `ID` `id` MEDIUMINT( 8 ) UNSIGNED DEFAULT NULL AUTO_INCREMENT; ");

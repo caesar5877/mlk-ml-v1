@@ -57,12 +57,12 @@ class FileManagement
 	//移动文件
 	function MoveFile($mfile,$mpath)
 	{
-		if($mpath!="" && !ereg("\.\.",$mpath))
+		if($mpath!="" && !preg_match("#\.\.#", $mpath))
 		{
 			$oldfile = $this->baseDir.$this->activeDir."/$mfile";
 			$mpath = str_replace("\\","/",$mpath);
             $mpath = preg_replace("#\/{1,}#", "/", $mpath);
-			if(!ereg("^/",$mpath))
+            if(!preg_match("#^/#", $mpath))
 			{
 				$mpath = $this->activeDir."/".$mpath;
 			}
@@ -192,7 +192,7 @@ class SpaceUse
 		$dh=dir($indir);
 		while($filename=$dh->read())
 		{
-			if(!ereg("^\.",$filename))
+            if(!preg_match("#^\.#", $filename))
 			{
 				if(is_dir("$indir/$filename"))
 				{

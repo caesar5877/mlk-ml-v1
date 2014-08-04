@@ -117,7 +117,7 @@ else if($dopost=='save')
 	}
 	
 	//处理图片文档的自定义属性
-	if($litpic!='' && !ereg('p',$flag))
+    if($litpic!='' && !preg_match("#p#", $flag))
 	{
 		$flag = ($flag=='' ? 'p' : $flag.',p');
 	}
