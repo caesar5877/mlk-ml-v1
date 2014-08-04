@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> <?php echo GetLang('imm'); ?> - <?php echo GetLang('sendmsg'); ?> </title>
+<?php include(DEDEMEMBER."/templets/head_inc.htm"); ?>
+<script type="text/javascript" language="javascript" src="js/box.js"></script>
+</head>
+<body>
+<?php include(DEDEMEMBER."/templets/head.htm"); ?>
+<div class="wrapper lineT">
+  <div class="mainBox">
+    <div class="main">
+      <?php include(DEDEMEMBER."/templets/menu.php"); ?>
+      <div class="dedeCenter" id="personal" style="margin-right:220px">
+        <div class="location"><?php echo GetLang('sendmsg'); ?></div>
+        <div class="titleTabBar bgGreen lineTB">
+          <ul id="pm">
+            <li class="select"><a href="pm.php?dopost=send"><?php echo GetLang('newmsg'); ?></a></li>
+            <li><a href="pm.php?folder=inbox"><?php echo GetLang('inbox'); ?></a></li>
+            <li><a href="pm.php?folder=outbox"><?php echo GetLang('outbox'); ?></a></li>
+            <li><a href="pm.php?folder=track"><?php echo GetLang('track'); ?></a></li>
+          </ul>
+        </div>
+        <form class="mTB10 mL10 mR10" action="pm.php" method="post" name="form1">
+          <input type='hidden' name='dopost' value='savesend' />
+          <table cellspacing="1" class="submit mB10">
+            <tbody>
+              <tr>
+                <td width="15%" align="right" valign="top"><?php echo GetLang('getuser'); ?>:</td>
+                <td>
+                	<input name="msgtoid" id="msgtoid" type="text" class="text" value="<?php if(!empty($uid)) echo $uid; ?>" size="28" maxlength="20" />
+               </td>
+              </tr>
+              <tr>
+                <td width="15%" align="right" valign="top"><?php echo GetLang('title'); ?>:</td>
+                <td>
+                	<input name="subject" type="text" class="text" value="" size="50" maxlength="70" />
+                </td>
+              </tr>
+              <tr>
+                <td width="15%" align="right" valign="top"><?php echo GetLang('content'); ?>:</td>
+                <td>
+                	<textarea cols="50" name="message" rows="6" style="height:80px;"></textarea>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td width="15%" height="45" align="right" valign="top">&nbsp;</td>
+                <td>
+                	<button class="button2" type="submit"><?php echo GetLang('send'); ?></button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </form>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="dedeRight">
+      <!--好友列表 -->
+      <script type="text/javascript">
+		$(document).ready(function(){
+			$(".buddy dt").click(function(){$(this).toggleClass("close");$(this).next("dd").toggle();});
+			$(".buddy li").hover(function(){$(this).addClass("hover"); },function(){$(this).removeClass("hover"); });
+		});
+		function senduid(uid)
+		{
+			$("#msgtoid")[0].value = uid;
+		}
+		</script>
+      <div class="titleBar bgGaryImg">
+        <h5 class="fLeft"><?php echo GetLang('customerlist'); ?></h5>
+      </div>
+      <dl class="buddy overflow mL10 mR10">
+        <dt class="buddySort icon"><?php echo GetLang('allcustomer'); ?></dt>
+        <dd class="buddyList">
+          <ul>
+            <?php
+          foreach ($friends as $friend)
+          {
+echo '<li class="thickbox"><span class="fLeft icon16 titOnline"></span><a href="#" onclick="senduid(\''.$friend['userid'].'\');">'.$friend['userid'].'</a></li>';
+          }
+          ?>
+          </ul>
+        </dd>
+      </dl>
+      <hr />
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<?php include(DEDEMEMBER."/templets/foot.htm"); ?>
+</body>
+</html>

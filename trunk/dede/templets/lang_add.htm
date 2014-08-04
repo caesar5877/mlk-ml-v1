@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>增加自定义资料</title>
+<link href="img/base.css" rel="stylesheet" type="text/css" />
+<script language='javascript'>
+</script>
+<style type="text/css">
+<!--
+.STYLE1 {color: #666666}
+-->
+</style>
+</head>
+<body background='img/allbg.gif' leftmargin='8' topmargin='8'>
+<form name="form1" action="lang_add.php" method="post">
+<input type="hidden" name="dopost" value="save" />
+<table width="98%" border="0" cellpadding="3" cellspacing="1" bgcolor="#D1DDAA" align="center">
+   <tr>
+    <td height="28" bgcolor="#EDF9D5" background='img/tbg.gif'>
+	    <strong><a href="lang_main.php">自定义资料管理</a> &gt;&gt; 增加自定义资料：</strong>	</td>
+   </tr>
+   <tr>
+      <td height="148" align="center" valign="top" bgcolor="#FFFFFF"><table width="99%" border="0" cellspacing="1" cellpadding="5">
+        <tr>
+          <td width="16%" height="30" align="right">说明：</td>
+          <td width="84%">
+            <input name="cid" type="text" id="cid" class="alltxt" style="width:200px" />
+          </td>
+        </tr>
+        <tr>
+          <td height="30" align="right" bgcolor="#F7FDEA">调用标识：<br>
+            <span class="STYLE1">(必须为非中文)</span></td>
+          <td bgcolor="#F7FDEA"><input name="eid" type="text" id="eid" class="alltxt" style="width:200px" /></td>
+        </tr>
+        <tr>
+          <td height="30" align="right">语言：</td>
+          <td>
+		  <select name='lang' id='lang' style='width:160px'>
+            <?php
+            foreach($lang_has_arr as $lid=>$lname)
+            {
+            	echo "<option value='$lid'>$lname($lid)</option>\r\n";
+            }
+            ?>
+           </select>
+          &nbsp;
+          <input type="checkbox" name="copyall" value="1" class="np" />
+          复制给所有已启用语言
+		  </td>
+        </tr>
+        <tr>
+          <td height="30" align="right" bgcolor="#F7FDEA">详细内容：</td>
+          <td bgcolor="#F7FDEA">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="89" align="right">&nbsp;</td>
+          <td>
+		  <table width="80%" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+              <td><?php
+	         GetEditor("langtxt", '',"300","Small","print","false");
+	      ?></td>
+            </tr>
+          </table>
+		  </td>
+        </tr>
+        <tr>
+          <td height="56" align="right">&nbsp;</td>
+          <td>
+		  <input type="submit" name="Submit" value="保存更改" class="np coolbg" />
+            &nbsp;&nbsp;
+          <input type="reset" name="Submit2" value="重设" class="np coolbg" />
+		</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

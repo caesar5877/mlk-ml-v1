@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}</title>
+<link href="{dede:global.cfg_templeturl/}/skin-red/css/redstyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_cmsurl/}/images/js/j.js"></script>
+<style type="text/css">
+*html #banner
+{
+	background-image: none;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{dede:global.cfg_templeturl/}/skin-red/images/banner.png', sizingMethod='crop');
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$("#navigation .sort").click(function()
+	{
+			$(this).next(".menu").toggleClass("invisible");
+			$(this).toggleClass("hover");
+	});	
+})
+</script>
+</head>
+<body>
+
+{dede:include filename='header.htm' /}
+
+<div class="wrapper position">
+  <div class="fLeft"> {dede:lang.currentpage/} {dede:field name='position'/} </div>
+  <div class="fRight"></div>
+</div>
+<div class="wrapper">
+  <div class="west">
+    <div class="module gray">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+      </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content">
+              <ul id="products">
+                {dede:list pagesize='12'}
+                <li>
+                  <dl>
+                    <dt><a href="[field:arcurl/]" title="[field:fulltitle/]"><img src='[field:litpic/]' /></a></dt>
+                    <dd class="textCenter" ><strong><a href="[field:arcurl/]" target="_blank">[field:title/]</a></strong></dd>
+                    <dd>[field:lang.standard/] <em>[field:psize /]</em></dd>
+                    <dd>[field:lang.brand/] <em>[field:brand /]</em> </dd>
+                  </dl>
+                </li>
+                {/dede:list}
+              </ul>
+              <br class='clear'/>
+							<div class='paglist'>
+								{dede:pagelist listsize='7' /}
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+  </div>
+  <div class="east">
+    
+    <div class="module black" style="margin-bottom:10px;">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+        <em>{dede:lang.productcatalog/}</em> </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" style="padding:0; margin:0">
+              <ul id="navigation" style="padding-left:10px;">
+                {dede:cattree}{/dede:cattree}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div><!--//box1-->
+    
+    <div class="module black">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+        <em>{dede:lang.newproduct/}</em> </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" style="padding:0; margin:0">
+              <ul id="navigation">
+                <ul class="menu">
+                  {dede:arclist row='10' titlelen='40'}
+                  <li><a href='[field:arcurl/]'>[field:title/]</a></li>
+                  {/dede:arclist}
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div><!--//box2-->
+    
+  </div>
+</div>
+
+{dede:include filename='footer.htm' /}
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_templeturl/}/default/images-ent/global.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templeturl/}/default/images-ent/startpage.css" rel="stylesheet" type="text/css" />
+<meta name="keywords" content="{dede:field.keywords /}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<script language="javascript">
+function initScrollPic()
+{
+ var picturesObj = document.getElementById("pictures");
+ var pics = picturesObj.childNodes;
+ var length = pics.length;
+ ScrollPic.prototype.flag = 0;
+ for(var i = 0 ; i < length ; i++)
+ {
+  if(pics[i].tagName == "TD")
+  {
+   	var td = document.createElement("TD");
+   	td.innerHTML = pics[i].innerHTML;
+   	picturesObj.appendChild(td);
+  }
+ }
+ picturesObj.onmouseover = function ()
+ {
+  	ScrollPic.prototype.flag = 1;
+ }
+ picturesObj.onmouseout = function ()
+ {
+  	if(ScrollPic.prototype.flag = 1)
+  	{
+   		ScrollPic.prototype.flag = 0;
+   		ScrollPic();
+  	}
+ }
+ ScrollPic();
+}
+function ScrollPic()
+{
+ var layer = document.getElementById('MarqueePictues').getElementsByTagName("DIV")[0];
+ if(layer.scrollLeft++ == layer.scrollLeft) {
+   layer.scrollLeft = layer.clientWidth/2 - 30;
+ }
+ if(ScrollPic.prototype.flag == 0) {
+  setTimeout("ScrollPic()", 20);
+ }
+}
+</script>
+</head>
+<body onload="initScrollPic()">
+<div id='header'>
+	<div class='langent'>
+		<div class='left'>{dede:lang.welcometo/}</div>
+		<div class='right'>{dede:lang.langent/} {dede:langlist}&nbsp; <a href='[field:typeurl/]'>[ [field:langname/] ]</a>{/dede:langlist}</div>
+	</div>
+</div>	
+<div id='home'>
+	<div class='indexbanner'></div>
+	<div class='indexct'>
+		<dl class='product'>
+			<dt>最新产品</dt>
+			<dd>                                       
+ <!-- //横向滚动图片 -->
+ <div id="MarqueePictues">
+   <div class='tb'>
+    <table cellpadding="0" cellspacing="0" border="0">
+     <tbody>
+      <tr id="pictures">
+        {dede:arclist channelid='6' row='6'} 
+         <td>
+         	<a href='[field:arcurl/]'><img src="[field:litpic/]" width="120" height="90" alt="[field:fulltitle/]" title="[field:fulltitle/]" /></a>
+        	<div class='ptxt'><a href='[field:arcurl/]'>[field:fulltitle/]</a></div>
+         </td>
+        {/dede:arclist}
+      </tr>
+     </tbody>
+    </table>
+   </div>
+ </div>
+ <!-- //友情链接 -->
+ <div id="flink">
+ 	<strong>友情链接：</strong> {dede:flink row='10'}<a href='[field:url/]' target='_blank'>[field:webname/]</a> {/dede:flink}
+ </div>
+			</dd>
+		</dl>
+		<dl class='news'>
+			<dt>新闻动态</dt>
+			<dd>
+				{dede:arclist row='8' titlelen='60' channelid='1'}
+				<div class='linktxt'><a href='[field:arcurl/]'>[field:title/]</a></div>
+				{/dede:arclist}
+			</dd>
+		</dl>
+	</div>
+	<br class='clear'/>
+</div>
+
+<br class='clear'/>
+<div id='footer'>
+	<!-- //仅装饰 -->
+	<div class='f1'></div>
+	<!-- //快速联系信息 -->
+	<div class='f2'>	
+		{dede:mylang eid='contacttype' /}
+	</div>
+	<!-- //版权说明信息 -->
+	<div class='f3'>
+		<div class='f3txt'>
+		{dede:global.cfg_powerby /}
+		<p class="powered">
+			Powered by <a href="http://www.dedecms.com" title="织梦内容管理系统(DedeCms)--国内最专业的PHP网站管理系统，轻松建站的首选利器。" target="_blank"><strong>Dede<span>CMS</span></strong></a> &copy; 2004-2008 DesDev Inc.
+		</p>
+		</div>
+	</div>	
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><?php echo GetLang('loggingin'); ?></title>
+<?php include(DEDEMEMBER."/templets/head_inc.htm"); ?>
+</head>
+<body>
+<?php include(DEDEMEMBER."/templets/head.htm"); ?>
+<div class="wrapper lineBorder" id="login">
+  <div class="location"><?php echo GetLang('loggingin'); ?></div>
+  <div class="theme fLeft">
+    <script type="text/javascript">
+function changeAuthCode() {
+	var num = 	new Date().getTime();
+	var rand = Math.round(Math.random() * 10000);
+	num = num + rand;
+	if ($("#vdimgck")[0]) {
+		$("#vdimgck")[0].src = "../include/vdimgck.php?tag=" + num;
+	}
+	return false;	
+}
+</script>
+    <form name='form1' method='POST' action='index_do.php'>
+      <input type="hidden" name="fmdo" value="login" />
+      <input type="hidden" name="dopost" value="login" />
+      <input type="hidden" name="gourl" value="<?php if(!empty($gourl)) echo $gourl; ?>" />
+      <ul>
+        <li><span><?php echo GetLang('username'); ?></span>
+          <input name="userid" type="text" id="txtUsername" class="text" />
+        </li>
+        <li><span><?php echo GetLang('password'); ?></span>
+          <input name="pwd" type="password" id="txtPassword" class="text" />
+        </li>
+        <li><span><?php echo GetLang('validatecode'); ?></span>
+          <input name="vdcode" type="text" id="vdcode" style='width:50px;text-transform:uppercase;' class="text" />
+          <img id="vdimgck" src="../include/vdimgck.php" alt="<?php echo GetLang('needchange'); ?>" align="absmiddle" style="cursor:pointer" onclick="this.src=this.src+'?'" /> <a onclick="changeAuthCode();" href="#"><?php echo GetLang('needchange'); ?></a></li>
+        <li>
+        	<span><?php echo GetLang('exptime'); ?></span>
+          <input type='radio' name='keeptime' value='2592000' />
+          <?php echo GetLang('onemonth'); ?>
+          <input type='radio' name='keeptime' value='604800' checked='checked' />
+          <?php echo GetLang('oneweek'); ?>
+          <input type='radio' name='keeptime' value='86400' />
+          <?php echo GetLang('oneday'); ?>
+          <input type='radio' name='keeptime' value='0' />
+          <?php echo GetLang('inaminute'); ?>
+         </li>
+        <li><span>&nbsp;</span>
+          <button class="button2" id="btnSignCheck" type="submit"><?php echo GetLang('login'); ?></button>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <div class="useNew fLeft textCenter">
+    <p class="signUp">
+      <button class="button6 mTB10" onclick="location='index_do.php?fmdo=user&dopost=regnew'"><?php echo GetLang('regnew'); ?></button>
+    </p>
+    <p class="mTB10"><a href="resetpassword.php"><?php echo GetLang('findpassword'); ?>&gt;&gt;</a></p>
+  </div>
+  <div class="clear"></div>
+</div>
+<?php include(DEDEMEMBER."/templets/foot.htm"); ?>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>修改招聘信息</title>
+<link href="img/base.css" rel="stylesheet" type="text/css" />
+<script language='javascript'>
+</script>
+<style type="text/css">
+<!--
+.STYLE1 {color: #666666}
+-->
+</style>
+</head>
+<body background='img/allbg.gif' leftmargin='8' topmargin='8'>
+<form name="form1" action="job_edit.php" method="post">
+<input type="hidden" name="id" value="<?php echo $id; ?>" />
+<input type="hidden" name="dopost" value="saveedit" />
+<table width="98%" border="0" cellpadding="3" cellspacing="1" bgcolor="#D1DDAA" align="center">
+   <tr>
+    <td height="28" bgcolor="#EDF9D5" background='img/tbg.gif'>
+	    <strong><a href="job_main.php">招聘信息管理</a> &gt;&gt; 修改招聘信息：</strong>	</td>
+   </tr>
+   <tr>
+      <td height="148" align="center" valign="top" bgcolor="#FFFFFF"><table width="99%" border="0" cellspacing="1" cellpadding="5">
+        <tr>
+          <td width="16%" height="30" align="right">职位名称：</td>
+          <td width="84%"><input name="jobname" type="text" class="alltxt" id="jobname" style="width:200px" value="<?php echo $row['jobname']; ?>" />          </td>
+        </tr>
+        <tr>
+          <td height="30" align="right" bgcolor="#F7FDEA">招聘人数：</td>
+          <td bgcolor="#F7FDEA"><input name="neednum" type="text" class="alltxt" id="neednum" style="width:200px" value="<?php echo $row['neednum']; ?>" /></td>
+        </tr>
+        <tr>
+          <td height="30" align="right">语言：</td>
+          <td><?php echo $row['lang']; ?></td>
+        </tr>
+        <tr>
+          <td height="30" align="right" bgcolor="#F7FDEA">招聘部门：</td>
+          <td bgcolor="#F7FDEA"><input name="needpart" type="text" class="alltxt" id="needpart" style="width:200px" value="<?php echo $row['needpart']; ?>" /></td>
+        </tr>
+        <tr>
+          <td height="30" align="right">联系人：</td>
+          <td><input name="linkman" type="text" class="alltxt" id="linkman" style="width:200px" value="<?php echo $row['linkman']; ?>" /></td>
+        </tr>
+        <tr>
+          <td height="30" align="right" bgcolor="#F7FDEA">联系电话：</td>
+          <td bgcolor="#F7FDEA"><input name="linktel" type="text" class="alltxt" id="linktel" style="width:200px" value="<?php echo $row['linktel']; ?>" /></td>
+        </tr>
+        <tr>
+          <td height="30" align="right">电子邮箱：</td>
+          <td><input name="email" type="text" class="alltxt" id="email" style="width:200px" value="<?php echo $row['email']; ?>" /></td>
+        </tr>
+        <tr>
+          <td height="30" align="right" bgcolor="#F7FDEA">公司地址：</td>
+          <td bgcolor="#F7FDEA"><input name="address" type="text" class="alltxt" id="address" style="width:300px" value="<?php echo $row['address']; ?>" /></td>
+        </tr>
+        <tr>
+          <td height="30" align="right">招聘时间：</td>
+          <td>开始：
+            <input name="sendtime" type="text" class="alltxt" id="sendtime" style="width:150px" value="<?php echo MyDate('Y-m-d',$row['sendtime']); ?>" />
+            结束：
+            <input name="exptime" type="text" class="alltxt" id="exptime" style="width:150px" value="<?php echo MyDate('Y-m-d',$row['exptime']); ?>" />          </td>
+        </tr>
+        <tr>
+          <td height="30" align="right" bgcolor="#F7FDEA">职位要求：</td>
+          <td bgcolor="#F7FDEA">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="30" align="right">&nbsp;</td>
+          <td><table width="80%" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+              <td><?php
+	         GetEditor("jobneed", $row['jobneed'],"200","Small","print","false");
+	      ?></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="30" align="right" bgcolor="#F7FDEA">具体说明：</td>
+          <td bgcolor="#F7FDEA">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="89" align="right">&nbsp;</td>
+          <td><table width="80%" border="0" cellspacing="1" cellpadding="1">
+              <tr>
+                <td><?php
+	         GetEditor("msg", $row['msg'],"200","Small","print","false");
+	      ?></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="56" align="right">&nbsp;</td>
+          <td><input type="submit" name="Submit" value="保存更改" class="np coolbg" />
+            &nbsp;&nbsp;
+            <input type="reset" name="Submit2" value="重设" class="np coolbg" />          </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

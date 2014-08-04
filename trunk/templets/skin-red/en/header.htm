@@ -1,0 +1,29 @@
+{dede:tpllang name='en' /}
+<div class="wrapper">
+  <div id="logo" class="fLeft">
+  	<a href='/'><img src="{dede:global.cfg_templeturl/}/images/top-logo.gif" width="150" height="42" border="0" /></a>
+  </div>
+  <div class="fRight">
+    <form id="search" class="fRight" action="{dede:global.cfg_phpurl/}/search.php" name="formsearch">
+      <input type='hidden' name='lang' value='{dede:handlang/}' />
+      <input type='text' name='keyword' class='text' style="width:150px"/>
+      <input name="searchbt" type="submit" value="{dede:lang.search/}" />
+    </form>
+    <ul id="userMenu" class="fRight fLeftChild redA">
+      <li>{dede:lang.langent/} {dede:langlist}&nbsp; <a href='[field:typeurl/]'>[ [field:langname/] ]</a>{/dede:langlist}</li>
+    </ul>
+    <span id="userStatus" class="fRight">{dede:lang.welcometo/} &nbsp;|&nbsp;</span>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="module black wrapper mT10">
+  <div class="top">
+    <div class="t_l"></div>
+    <div class="t_r"></div>
+    <ul id="navMenu" class="fLeftChild">
+      {dede:channel get='index'} <li class='home'><a href='[field:typeurl/]'>[field:lang.indexname/]</a></li> {/dede:channel}
+  		{dede:channel type='top'} <li><a href='[field:typeurl/]'>[field:typename/]</a></li> {/dede:channel}
+    </ul>
+  </div>
+</div>

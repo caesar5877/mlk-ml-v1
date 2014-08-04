@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> <?php echo GetLang('mydata'); ?> </title>
+<?php include(DEDEMEMBER."/templets/head_inc.htm"); ?>
+<script language='javascript'>
+function checkSubmit()
+{
+	if(document.form2.oldpwd.value=='')
+	{
+		document.form2.oldpwd.focus();
+		alert("<?php echo GetLang('needoldpassword'); ?>");
+		return false;
+	}
+	if(document.form2.userpwdok.value!=document.form2.userpwd.value)
+	{
+		document.form2.userpwdok.focus();
+		alert("<?php echo GetLang('newoldpassowrddiffer'); ?>");
+		return false;
+	}
+	if(document.form2.email.value=="")
+	{
+		document.form2.email.focus();
+		alert("Email<?php echo GetLang('cannotempty'); ?>");
+		return false;
+	}
+	if(document.form2.uname.value=="")
+	{
+		document.form2.uname.focus();
+		alert("<?php echo GetLang('uname').GetLang('cannotempty'); ?>");
+		return false;
+	}
+	if(document.form2.vdcode.value=="")
+	{
+		document.form2.vdcode.focus();
+		alert("<?php echo GetLang('validatecode').GetLang('cannotempty'); ?>");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<?php include(DEDEMEMBER."/templets/head.htm"); ?>
+<div class="wrapper lineT">
+  <div class="mainBox">
+    <div class="main">
+      <?php include(DEDEMEMBER."/templets/menu.php"); ?>
+      <div class="dedeMain">
+        <div class="location"><?php echo GetLang('personaldata'); ?></div>
+        <div class="titleTabBar bgGreen lineTB">
+          <ul>
+            <li class='select'><a href='#'><?php echo GetLang('mydata'); ?></a></li>
+            <li><a href='myface.php'><?php echo GetLang('faceset'); ?></a></li>
+          </ul>
+        </div>
+        <form class="mTB10 mL10 mR10" name="form2" action="myinfo.php" method="post" onsubmit="return checkSubmit();">
+          <input type="hidden" name="dopost" value="save" />
+          <div class="titleBar bgGrass lineB">
+            <div class="fLeft"><strong><?php echo GetLang('mydata'); ?></strong></div>
+            <div class="fRight titSecondary white" style="margin-top:5px;"></div>
+          </div>
+          <table cellspacing="1" class="submit">
+            <tbody>
+              <tr>
+                <td align="right"><?php echo GetLang('username'); ?></td>
+                <td><?php echo $cfg_ml->M_LoginID; ?></td>
+              </tr>
+              <tr>
+                <td align="right"><span class="tdl"><?php echo GetLang('oldpassword'); ?></span></td>
+                <td><input name="oldpwd" type="password" id="oldpwd" size="20" class="text" />
+                  <span style="color:red;">*</span></td>
+              </tr>
+              <tr>
+                <td align="right"><span class="tdl"><?php echo GetLang('newpassword'); ?></span></td>
+                <td><input name="userpwd" type="password" id="userpwd" size="20" class="text" />
+                  <span id="_userpwdok">(<?php echo GetLang('ncletempty'); ?>)</span></td>
+              </tr>
+              <tr>
+                <td align="right"><?php echo GetLang('cnpassword'); ?></td>
+                <td><span class="tdr">
+                  <input name="userpwdok" type="password" id="userpwdok" value="" size="20" class="text" />
+                  <span id="_userpwdok2">(<?php echo GetLang('ncletempty'); ?>)</span> </span></td>
+              </tr>
+              <tr>
+                <td align="right"><span class="tdl">Email：</span></td>
+                <td>
+                  <input name="email" type="text" id="email" class="text" value="<?php echo $row['email']; ?>" />
+                  <i class="red">*</i> <span id="_email"></span></td>
+              </tr>
+              <tr>
+                <td align="right"><?php echo GetLang('language'); ?></td>
+                <td>
+              <select name='slang' id='slang' style='width:160px'>
+          		<?php
+            		foreach($lang_map_arr as $lid=>$lname)
+            		{
+            			if($lid==$row['lang']) echo "<option value='$lid' selected>$lname($lid)</option>\r\n";
+            			else echo "<option value='$lid'>$lname($lid)</option>\r\n";
+            		}
+           		?>
+           		</select>
+                </td>
+              </tr>
+              <tr>
+                <td align="right"><span class="tdl"><?php echo GetLang('sex'); ?></span></td>
+                <td>
+                  <input type="radio" name="sex" value="1" <?php if($row['sex']=='1') echo " checked='checked' "; ?>/>
+                  <?php echo GetLang('man'); ?> &nbsp;
+                  <input type="radio" name="sex" value="2" <?php if($row['sex']=='2') echo " checked='checked' "; ?>/>
+                  <?php echo GetLang('woman'); ?> &nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td align="right"><span><?php echo GetLang('uname'); ?></span></td>
+                <td>
+          <input name="uname" type="text" id="uname" class="text" value="<?php echo $row['uname']; ?>" style='width:150px;' />
+          <i class="red">*</i>
+        </td></tr>
+        <tr>
+                <td align="right"><span><?php echo GetLang('company'); ?></span></td>
+                <td>
+          <input name="company" type="text" id="company" class="text" value="<?php echo $row['company']; ?>" />
+          <i class="red">*</i>
+        </td></tr>
+        <tr>
+                <td align="right"><span><?php echo GetLang('mobile'); ?></span></td>
+                <td>
+          <input name="mobile" type="text" id="mobile" class="text" value="<?php echo $row['mobile']; ?>"/>
+        </td></tr>
+        <tr>
+                <td align="right"><span><?php echo GetLang('tel'); ?></span></td>
+                <td>
+          <input name="tel" type="text" id="tel" class="text" value="<?php echo $row['tel']; ?>" />
+        </td></tr>
+        <tr>
+                <td align="right"><span><?php echo GetLang('fax'); ?></span></td>
+                <td>
+          <input name="fax" type="text" id="fax" class="text" value="<?php echo $row['fax']; ?>" />
+        </td></tr>
+        <tr>
+                <td align="right"><span><?php echo GetLang('address'); ?></span></td>
+                <td>
+          <input name="address" type="text" id="address" class="text" style='width:350px;' value="<?php echo $row['address']; ?>" />
+        </td></tr>
+              <tr>
+                <td align="right"><span class="tdl"><?php echo GetLang('validatecode'); ?></span></td>
+                <td><input name="vdcode" type="text" id="vdcode" style='width:50px;text-transform:uppercase;' class="text" />
+                  <img src='../include/vdimgck.php' width='50' height='20' align="absmiddle" /></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td height="45">&nbsp;</td>
+                <td height="45"><button class="button2" type="submit"><?php echo GetLang('update'); ?></button>
+                  <button class="button2 mL10" type="reset"><?php echo GetLang('reset'); ?></button></td>
+              </tr>
+            </tfoot>
+          </table>
+        </form>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<?php include(DEDEMEMBER."/templets/foot.htm"); ?>
+</div>
+</body>
+</html>

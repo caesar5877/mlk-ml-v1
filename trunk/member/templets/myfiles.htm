@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> <?php echo GetLang('mydocuments'); ?> </title>
+<?php include(DEDEMEMBER."/templets/head_inc.htm"); ?>
+</head>
+<body>
+<?php include(DEDEMEMBER."/templets/head.htm"); ?>
+<div class="wrapper lineT">
+  <div class="mainBox">
+    <div class="main">
+      <?php include(DEDEMEMBER."/templets/menu.php"); ?>
+      <div class="dedeMain">
+        <div class="location"> <?php echo GetLang('mydocuments'); ?> </div>
+        <div class="titleTabBar bgGreen lineTB">
+          <ul>
+            <li><a href="mystow.php"> <?php echo GetLang('myfavorites'); ?> </a></li>
+            <li class="select"><a href="myfiles.php"> <?php echo GetLang('mydocuments'); ?> </a></li>
+          </ul>
+        </div>
+        <div class="mTB10 mL10 mR10">
+          {dede:datalist}
+          <div class="item favorite">
+            <div class="itemHead" >
+              <div class="fRight">
+              	<span class="itemDigg"> <?php echo GetLang('sendtime'); ?><?php echo MyDate('m-d H:i', $fields['senddate']); ?> </span>
+              	<span class="itemManage"> &nbsp; <a class="text_button" href="/plus/recommend.php?lang=<?php echo $userLang; ?>&aid={dede:field.id/}" target="_blank">[<?php echo GetLang('recommend'); ?>]</a> </span>
+              </div>
+              <span class="itemHeadTitle">
+              	<a href='/plus/view.php?aid=<?php echo $fields["id"]; ?>' target='_blank'><?php echo $fields["title"]; ?></a>
+              </span>
+            </div>
+            <div class="itemBody invisible" >
+              <div class="itemContent"></div>
+              <div class="itemBodyFoot"></div>
+            </div>
+          </div>
+          <hr class="dotted" />
+          {/dede:datalist}
+          <div class="pages">{dede:pagelist listsize=5 /}</div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<?php include(DEDEMEMBER."/templets/foot.htm"); ?>
+</div>
+</body>
+</html>

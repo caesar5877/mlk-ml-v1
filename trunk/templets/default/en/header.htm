@@ -1,0 +1,26 @@
+{dede:tpllang name='en' /}
+<div id='header'>
+	<div class='langent'>
+		<div class='left'>{dede:lang.welcometo/}</div>
+		<div class='right'>{dede:lang.langent/} {dede:langlist}&nbsp; <a href='[field:typeurl/]'>[ [field:langname/] ]</a>{/dede:langlist}</div>
+	</div>
+	<div class='logoarea'>
+		<div class='logo'>
+		<div class="title">
+			<h1>
+				<h1><a href="{dede:global.cfg_basehost/}/">{dede:global.cfg_webname/}</a></h1>
+			</h1>
+		</div>
+		</div>
+		<div class='search'>
+			<form action="{dede:global.cfg_phpurl/}/search.php" name="formsearch">
+		 		<input type='hidden' name='lang' value='{dede:handlang/}' />
+		 		<input type='text' name='keyword' class='keyword'/><button type='submit' name='searchbt' class='searchbt'></button>
+			</form>
+		</div>
+	</div>
+	<ul class='nav'>
+		{dede:channel get='index'} <li class='home'><a href='[field:typeurl/]'>[field:lang.indexname/]</a></li> {/dede:channel}
+  	{dede:channel type='top'} <li><a href='[field:typeurl/]'>[field:typename/]</a></li> {/dede:channel}
+	</ul>
+</div>

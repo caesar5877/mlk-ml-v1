@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_templeturl/}/skin-red/css/redstyle.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+*html #banner
+{
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{dede:global.cfg_templeturl/}/skin-red/images/banner.png',sizingMethod='crop');
+}
+</style>
+</head>
+<body>
+{dede:include filename='header.htm' /}
+<div class="wrapper" style="margin-top:10px;">
+  <div class="west">
+    
+    <!-- //公司简介 -->
+    <div class="module gules">
+    <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+      </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" style="padding:0;">
+              <div id="news">
+              	<div class='about'></div>
+                <div class='aboutCt'>
+                	{dede:mylang name='introduce'/}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+    <div class='clear'></div>
+    
+    <!-- //最新产品 -->
+    <div class="module black mT10">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+        <em>{dede:lang.newproduct/}</em><strong class="whiteA"></strong> </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" id="products">
+              {dede:arclist row='2' channelid='6' addfields='psize,rfprice,brand'}
+              <div class="allList mTB10">
+                <div class="img">
+                  <div class="module gray">
+                    <div class="top">
+                      <div class="t_l"></div>
+                      <div class="t_r"></div>
+                    </div>
+                    <div class="mid">
+                      <div class="m_l">
+                        <div class="m_r">
+                          <div class="content">
+                          	<a class="ad" href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">
+                          		<img src="[field:litpic/]" width="200" height="150" alt="[field:fulltitle/]" />
+                          	</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <div class="b_l"></div>
+                      <div class="b_r"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="txt">
+                  <h3 class="p1 mTB10 blackA"><a href="[field:arcurl/]">[field:fulltitle/]</a></h3>
+                  <p class="p2 mB5">[field:description/]</p>
+                  <p class="p3">[field:lang.rfprice/] <strong>[field:rfprice/]</strong></p>
+                  <p class="p3">[field:lang.standard/] [field:psize/]</p>
+                  <p class="p3">[field:lang.brand/] [field:brand/]</p>
+                </div>
+              </div>
+              <div class="clear"></div>
+              {/dede:arclist}
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="east">
+    <div class="module gray">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+      </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" id="login">
+              <h3 class="mB10 aRed" style="font-size:14px;">{dede:lang.membercenter/}</h3>
+              <form name='form1' method='POST' action='/member/index_do.php'>
+                <input type="hidden" name="fmdo" value="login" />
+                <input type="hidden" name="dopost" value="login" />
+                <input type="hidden" name="gourl" value="" />
+                <input type='hidden' name='keeptime' value='86400' />
+                <ul>
+                  <li><label>{dede:lang.username/}:</label>
+                    <input name="username" type="text" class="text" id="txtUsername" />
+                  </li>
+                  <li><label>{dede:lang.password/}:</label>
+                    <input name="password" type="password" class="text" id="txtPassword" />
+                  </li>
+                  <li><label>{dede:lang.verify/}:</label>
+                    <input name="vdcode" type="text" id="vdcode" style='width:50px;text-transform:uppercase;' class="text" />
+                    <img id="vdimgck" src="/include/vdimgck.php" align="absmiddle" style="cursor:pointer" onclick="this.src=this.src+'?'" />
+                  </li>
+                  <li style="padding-left:32%">
+                    <input id="btnSignCheck" name="" type="submit" value="{dede:lang.login/}" />
+                    <label>&nbsp;<a href="/member/index_do.php?fmdo=user&dopost=regnew&lang={dede:handlang/}" >{dede:lang.register/}...</a></label>
+                 </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+    
+    <div class="module black mT10">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+        <em id="voteTit">{dede:lang.vote/}</em> </div>
+    </div>
+    <div class="module mT10 gray">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+      </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" id="vote">
+              {dede:vote lineheight='24' tablewidth='100%' titlebgcolor='#F8FDE1' tablebgcolor='#FFFFFF'}{/dede:vote}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+    
+    <div class="module black mT10">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+        <em id="newsTit">{dede:lang.news/}</em> </div>
+    </div>
+    <div class="module mT10 gray">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+      </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" id="vote">
+							{dede:arclist channelid='1' row='8' titlelen='40'}
+								<div class='linktxt'><a href='[field:arcurl/]'>[field:title/]</a></div>
+							{/dede:arclist}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{dede:include filename='footer.htm' /}
+
+</body>
+</html>
