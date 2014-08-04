@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:lang.jobs/}</title>
+<link href="{dede:global.cfg_templeturl/}/skin-red/css/redstyle.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+*html #banner
+{
+	background-image: none;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{dede:global.cfg_templeturl/}/skin-red/images/banner.png', sizingMethod='crop');
+}
+</style>
+</head>
+<body>
+{dede:include filename='header.htm' /}
+<div class="wrapper position">
+  <div class="fLeft"> {dede:lang.currentpage/} {dede:lang.jobs/} </div>
+  <div class="fRight"></div>
+</div>
+<div class="wrapper">
+  <div class="west">
+    <div class="module gray">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+      </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content">
+             <script language='javascript'>
+             var i = 0;
+             var jobIds = new Array();
+             var jobNames = new Array();
+             </script>
+             {dede:list pagesize='6'}
+              <a name='[field:id/]'></a>
+            	<script language='javascript'>
+            		jobIds[i] = [field:id/];
+             		jobNames[i] = "[field:jobname/]";
+             		i++;
+            	</script>
+              <table width="98%"  border="0" align="center" class="tList mTB10">
+                <thead>
+                  <tr>
+                    <th colspan="4" align="left">
+                    	<b>[field:lang.jobname/] : [field:jobname/]</b> <span class="mL10">([field:lang.neednum/]: [field:neednum/])</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th width="25%">[field:lang.needpart/]</th>
+                  <td width="25%">[field:needpart/]</td>
+                  <th width="25%">[field:lang.exptime/]</th>
+                  <td width="25%">[field:exptime function="MyDate('Y-m-d', @me)"/]</td>
+                </tr>
+                <tr>
+                  <th>[field:lang.linkman/]</th>
+                  <td>[field:linkman/]</td>
+                  <th>[field:lang.linktel/]</th>
+                  <td>[field:linktel/]</td>
+                </tr>
+                  <th>[field:lang.email/]</th>
+                  <td>[field:email/]</td>
+                  <th>[field:lang.address/]</th>
+                  <td>[field:address/]</td>
+                </tr>
+                <tr>
+                  <th colspan="4" align="left">[field:lang.jobneed/]</th>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                  	[field:jobneed/]
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="4" align="left">[field:lang.otherissue/]</th>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                  	[field:msg/]
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+              {/dede:list}
+              <div class='paglist'>
+								{dede:pagelist listsize='7' /}
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+  </div>
+  <div class="east">
+    <div class="module black">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+        <em>{dede:lang.joblist/}</em> 
+      </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" style="padding:0; margin:0">
+            <ul id="navigation">
+            <ul class="menu">
+                <script language='javascript'>
+            		for(j=0; j<i; j++)
+            		{
+            			document.write("<li><a href='#"+jobIds[j]+"'>"+jobNames[j]+"</a></li>");
+            		}
+            	</script>
+            </ul>
+          </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{dede:include filename='footer.htm' /}
+
+</body>
+</html>

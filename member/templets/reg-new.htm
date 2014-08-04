@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http：//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http：//www.w3.org/1999/xhtml">
+<head>
+<title> <?php echo GetLang('member').' '.GetLang('register'); ?> </title>
+<?php include(DEDEMEMBER."/templets/head_inc.htm"); ?>
+<script type="text/javascript" language="javascript">
+<!--
+var reMethod = "POST"
+var pwdmin = <?php echo $cfg_mb_pwdmin; ?>;
+function SelLang(selobj)
+{
+	location = "index_do.php?fmdo=user&dopost=regnew&lang="+selobj.options[selobj.selectedIndex].value;
+}
+-->
+</script>
+<script type="text/javascript" language="javascript" src='js/reg_new_<?php echo $userLang; ?>.js'></script>
+</head>
+<body>
+<?php include(DEDEMEMBER."/templets/head.htm"); ?>
+<div class="wrapper lineBorder" id="login">
+  <div class="location"><span class="fLeft"> <?php echo GetLang('member').' '.GetLang('register'); ?> </span><span class="fRight">
+    <button class="button5 mTB10 mR10" onclick="location='login.php'"> <?php echo GetLang('login'); ?> </button>
+    </span></div>
+  <div class="theme fLeft">
+    <form name="form2" id="regUser" action="reg_new.php" method="post">
+      <input type="hidden" name="dopost" value="regok" />
+      <p class="mB10" style=" text-align:right"></p>
+      <ul>
+        <li>
+        	<span>&nbsp;</span>([<i class="red"> * </i>] <?php echo GetLang('requireditems'); ?>)
+        </li>
+        <li><span><?php echo GetLang('language'); ?></span>
+          <select name='slang' id='slang' style='width:160px' onchange='SelLang(this)'>
+          <?php
+            foreach($lang_map_arr as $lid=>$lname)
+            {
+            	if($lid==$userLang) echo "<option value='$lid' selected>$lname($lid)</option>\r\n";
+            	else echo "<option value='$lid'>$lname($lid)</option>\r\n";
+            }
+           ?>
+           </select>
+          <i class="red">*</i>
+        </li>
+        <li><span><?php echo GetLang('username'); ?></span>
+          <input name="userid" type="text" id="txtUsername" class="text" style='width:150px;' />
+          <i class="red">*</i> <em id="_userid"></em> 
+        </li>
+        <li><span><?php echo GetLang('password'); ?></span>
+          <input name="userpwd" type="password" id="txtPassword" class="text" style='width:150px;' />
+          <i class="red">*</i>
+        </li>
+        <li><span><?php echo GetLang('cpassword'); ?></span>
+          <input name="userpwdok" type="password" id="userpwdok" value="" size="20" class="text" style='width:150px;' />
+          <i class="red">*</i> <em id="_userpwdok"></em>
+        </li>
+        <li><span>Email: </span>
+          <input name="email" type="text" id="email" class="text" />
+          <i class="red">*</i> <em id="_email"></em>
+        </li>
+        <li><span><?php echo GetLang('sex'); ?></span>
+          <input type="radio" name="sex" value="1" checked/>
+          <?php echo GetLang('man'); ?> &nbsp;
+          <input type="radio" name="sex" value="2" />
+          <?php echo GetLang('woman'); ?> &nbsp;
+        </li>
+        <li><span><?php echo GetLang('uname'); ?></span>
+          <input name="uname" type="text" id="uname" class="text" style='width:150px;' />
+          <i class="red">*</i>
+        </li>
+        <li><span><?php echo GetLang('company'); ?></span>
+          <input name="company" type="text" id="company" class="text" />
+          <i class="red">*</i>
+        </li>
+        <li><span><?php echo GetLang('mobile'); ?></span>
+          <input name="mobile" type="text" id="mobile" class="text" />
+        </li>
+        <li><span><?php echo GetLang('tel'); ?></span>
+          <input name="tel" type="text" id="tel" class="text" />
+        </li>
+        <li><span><?php echo GetLang('fax'); ?></span>
+          <input name="fax" type="text" id="fax" class="text" />
+        </li>
+        <li><span><?php echo GetLang('address'); ?></span>
+          <input name="address" type="text" id="address" class="text" style='width:350px;' />
+        </li>
+        <li><span><?php echo GetLang('validatecode'); ?></span>
+          <input name="vdcode" type="text" id="vdcode" style='width:50px;text-transform：uppercase;' class="text" />
+          <img src="../include/vdimgck.php" alt="<?php echo GetLang('needchange'); ?>" name="vdimgck" align="absmiddle" id="vdimgck" style="cursor：pointer"/> 
+          <a href="#vdcode"><?php echo GetLang('needchange'); ?></a>
+        </li>
+      </ul>
+      <hr />
+      <ul>
+        <li>
+          <span>&nbsp;</span>
+          <button class="button2" id="btnSignCheck" type="submit"><?php echo GetLang('register'); ?></button> &nbsp; &nbsp; &nbsp;
+          <button class="button2" id="resetbt" type="reset"><?php echo GetLang('reset'); ?></button>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <div class="clear"></div>
+</div>
+<?php include(DEDEMEMBER."/templets/foot.htm"); ?>
+</body>
+</html>

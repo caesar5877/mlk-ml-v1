@@ -1,0 +1,105 @@
+<?php
+if(!isset($GLOBALS['_vars'])) $GLOBALS['_vars'] = array(); 
+$fields = array();
+?>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<title>自定义资料管理</title>
+<link href='img/base.css' rel='stylesheet' type='text/css'>
+<script language='javascript'>
+function Sel(stype)
+{
+	  for(var i=0;i < document.getElementsByName('aids').length;i++)
+	  {
+		  if(stype=='all') document.getElementsByName('aids')[i].checked=true;
+		  else document.getElementsByName('aids')[i].checked=false;
+	  }
+}
+function checkSubmit()
+{
+	var str = '';
+	for(var i=0;i < document.getElementsByName('aids').length;i++)
+	{
+		  if(document.getElementsByName('aids')[i].checked){
+		  	if(str=='') str += document.getElementsByName('aids')[i].value;
+		  	else str += ',' + document.getElementsByName('aids')[i].value;
+		  }
+	}
+	if(str=='')
+	{
+		alert('你没选择任何内容！');
+		return false;
+	}
+	else
+	{
+		location="lang_edit.php?aids="+str+"&dopost=delall";
+	}
+}
+</script>
+</head>
+<body background='img/allbg.gif' leftmargin='8' topmargin='8'>
+<table width="98%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#D1DDAA">
+  <form name='form1' method='post' action='lang_edit.php' onSubmit='return checkSubmit();'>
+  	<input type='hidden' name='dopost' value='delall'/>
+  <tr>
+    <td height="28" background="img/tbg.gif" colspan="6">
+  <div style="float:left">
+  	<b>自定义资料管理</b>	</div>
+	<div style="float:right;padding-right:6px;">
+		[<a href="lang_add.php"><u>增加新自定义资料</u></a>] 	 	</div>  </td>
+</tr>
+  <tr align="center" bgcolor="#F9FCEF" height="26">
+          <td width="6%">选择</td>
+          <td width="23%">说明</td>
+          <td width="12%">标识</td>
+          <td width="12%">语言</td>
+          <td width="32%">模板调用代码</td>
+          <td width="15%">管理</td>
+        </tr>
+        <?php
+$atts = array();
+$atts['tagname'] = 'datalist';
+$blockValue = $this->refObj->GetArcList($atts,$this->refObj,$fields); 
+foreach( $blockValue as $key=>$fields )
+{
+?>
+        <tr align="center" bgcolor="#FFFFFF" height="26" onMouseMove="javascript:this.bgColor='#FCFDEE';"
+        	 onMouseOut="javascript:this.bgColor='#FFFFFF';">
+          <td><input type='checkbox' name='aids' value='<?php echo $fields['id']; ?>' class='np' /></td>
+          <td><a href='lang_edit.php?id=<?php echo $fields['id']; ?>&dopost=getedit'><?php echo $fields['cid']; ?></a></td>
+          <td><?php echo $fields['eid']; ?></td>
+          <td><?php echo $lang_map_arr[$fields['lang']]; ?>(<?php echo $fields['lang']; ?>)</td>
+          <td><?php echo '{'."dede:mylang eid='{$fields['eid']}' /".'}'; ?></td>
+          <td>
+          	<a href='lang_edit.php?id=<?php echo $fields['id']; ?>&dopost=getedit'>[更改]</a>
+		        <a href='lang_edit.php?id=<?php echo $fields['id']; ?>&dopost=delete'>[删除]</a>
+		      </td>
+        </tr>
+		<?php
+}
+?>
+     <tr bgcolor="#FDFEEF" height="28">
+      <td colspan="6">
+      	　
+        <a href='#' onclick='Sel("all")' class='np coolbg'>[全选]</a>
+      	<a href='#' onclick='Sel("none")' class='np coolbg'>[取消]</a>
+      	<a href='#' onclick='checkSubmit()' class='np coolbg'>批量删除</a>      </td>
+     </tr>
+     <tr align="center" bgcolor="#F9FCEF" height="28">
+      <td colspan="6">
+      	<?php
+$atts = array();
+$atts['tagname'] = 'pagelist';
+$atts['listsize'] = '6';
+ echo $this->refObj->GetPageList($atts,$this->refObj,$fields); 
+?>
+      </td>
+     </tr>
+    </form>
+   </table>
+   </td>
+</tr>
+</table>
+</body>
+</html>

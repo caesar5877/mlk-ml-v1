@@ -1,0 +1,71 @@
+<?php
+//未登录显示的head
+if(!$cfg_ml->IsLogin()) {
+?>
+
+<div class="header mB10">
+  <div class="wrapper">
+    <div class="logo fLeft"><a href="<?php echo $cfg_indexurl?>"><img src="../member/images/member.gif" alt="<?php echo GetLang('membercenter'); ?>" /></a> </div>
+    <div class="fRight">
+      <div class="topBar">
+        <ul class="userMenu green">
+          <li><a href="../" title="<?php echo GetLang('indexname'); ?>"><?php echo GetLang('indexname'); ?></a></li>
+          <li><a href="../member/index_do.php?fmdo=user&dopost=regnew" title="<?php echo GetLang('register'); ?>"><?php echo GetLang('register'); ?></a></li>
+          <li><a href="../member/login.php" title="<?php echo GetLang('login'); ?>"><?php echo GetLang('login'); ?></a></li>
+          <li class="help"><a href="http://help.dedecms.com" title="DEDECMS Help Center"> <?php echo GetLang('help'); ?> </a></li>
+        </ul>
+        <span>
+     <script type="text/javascript">
+      var now=(new Date()).getHours();
+			if(now>6&&now<=12) {
+				document.write("<?php echo GetLang('goodmorning'); ?>");
+			} else if(now>12&&now<=18) {
+				document.write("<?php echo GetLang('goodafternoon'); ?>");
+			} else {
+				document.write("<?php echo GetLang('goodevening'); ?>");
+			}
+			</script>
+        <i><?php echo GetLang('guest'); ?></i> <?php echo GetLang('youmaychoose'); ?></span>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<?php
+}
+//登录后显示的head
+else {
+?>
+<div class="header mB10">
+  <div class="wrapper">
+    <div class="logo fLeft"><a href="<?php echo $cfg_indexurl?>"><img src="../member/images/member.gif" alt="<?php echo GetLang('membercenter'); ?>" /></a> </div>
+    <div class="fRight">
+      <div class="topBar">
+        <ul class="userMenu green">
+          <li><a href="../"><?php echo GetLang('indexname'); ?></a></li>
+        	<li><a href="../member/index.php"><?php echo GetLang('membercenter'); ?></a></li>
+          <li><a href="../member/index_do.php?fmdo=login&dopost=exit"><?php echo GetLang('loginout'); ?></a></li>
+          <li class="help"><a href="http://help.dedecms.com"><?php echo GetLang('help'); ?></a></li>
+        </ul>
+        <span>
+     <script type="text/javascript">
+      var now=(new Date()).getHours();
+			if(now>6&&now<=12) {
+				document.write("<?php echo GetLang('goodmorning'); ?>");
+			} else if(now>12&&now<=18) {
+				document.write("<?php echo GetLang('goodafternoon'); ?>");
+			} else {
+				document.write("<?php echo GetLang('goodevening'); ?>");
+			}
+			</script>
+        <i><?php echo $cfg_ml->M_UserName?></i></span>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<?php
+}
+?>

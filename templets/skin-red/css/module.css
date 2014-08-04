@@ -1,0 +1,188 @@
+/*
+
+“圆角” 样式
+
+2008.8.12 10:48 for Fangyu12@gmail.com
+
+Last modified 2008.10.06 15:30
+
+Copyright (c) 2008, dedecms All rights reserved.
+
+*/
+/* 圆角模型
+-------------------------------------------------------------------*/
+.module,
+.module .mid {
+	overflow:hidden;
+}
+.module .top .t_l, .module .bottom .b_l {
+	float:left;
+	overflow:hidden;
+}
+.module .top .t_r, .module .bottom .b_r {
+	float:right;
+	overflow:hidden;
+}
+.module .top em {
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	font-family:Arial,Helvetica,sans-serif;
+	margin-left: 5px;
+}
+.module .top em a:link, .module .top em a:visited {
+	font-size:13px;
+	font-weight:bold;
+}
+.module .top span {
+	float:right;
+}
+.module .top strong {
+	cursor:pointer;
+	float:right;
+	font-weight:normal;
+	margin-right:4px;
+}
+.module .mid .m_l, .module .mid .m_r {
+	overflow:hidden;
+}
+.module .mid .content {
+	overflow:hidden;
+	height:100%;
+	clear: both;
+	margin-right: 8px;
+	margin-left: 8px;
+	padding-top: 8px;
+	/*padding-bottom: 10px;*/
+}
+.module .top, 
+.module .top .t_l, 
+.module .top .t_r, 
+.module .bottom, 
+.module .bottom .b_l, 
+.module .bottom .b_r {
+	background-image: url("../images/bg.png");
+}
+/* 红色圆角
+-------------------------------------------------------------------*/
+.gules,
+.gules .top,
+.gules .bottom {
+	background:#720202;
+}
+.gules .top .t_l {
+	background-position: -10px -320px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+.gules .top .t_r {
+	background-position: -15px -320px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+.gules .bottom .b_l{
+	background-position: -10px -325px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+.gules .bottom .b_r{
+	background-position: -15px -325px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+/* 黑色
+-------------------------------------------------------------------*/
+.black .top {
+	background-repeat: repeat-x;
+	background-position: 0px -60px;
+	height: 45px;
+	line-height:45px;
+	color:#FEFEFE
+}
+.black .top .t_l {
+	background-repeat: no-repeat;
+	background-position: -10px 0;
+	height: 45px;
+	width: 10px;
+}
+.black .top .t_r {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 45px;
+	width: 10px;
+}
+/* 红
+-------------------------------------------------------------------*/
+.red .top {
+	background-position: 0 -200px;
+	background-repeat: repeat-x;
+	height: 8px;
+}
+.red .top .t_l {
+	background-position: -10px -180px;
+	background-repeat: no-repeat;
+	height: 8px;
+	width: 10px;
+}
+.red .top .t_r {
+	background-position: 0 -180px;
+	background-repeat: no-repeat;
+	height: 8px;
+	width: 10px;
+}
+/* 灰色圆角
+-------------------------------------------------------------------*/
+.gray .top {
+	background-position: 0 -350px;
+	background-repeat: repeat-x;
+	height: 5px;
+}
+.gray .top .t_l {
+	background-position: 0 -320px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+.gray .top .t_r {
+	background-position: -5px -320px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+.gray .mid .m_l,
+.black .mid .m_l,
+.red .mid .m_l{
+	border-left:1px solid #ededed;
+}
+.gray .mid .m_r,
+.black .mid .m_r,
+.red .mid .m_r{
+	border-right:1px solid #ededed;
+}
+.gray .bottom,
+.black .bottom,
+.red .bottom{
+	background-position: 0 -346px;
+	background-repeat: repeat-x;
+	height: 5px;
+}
+.gray .bottom .b_l,
+.black .bottom .b_l,
+.red .bottom .b_l{
+	background-position: 0 -325px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+.gray .bottom .b_r,
+.black .bottom .b_r,
+.red .bottom .b_r{
+	background-position: -5px -325px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}

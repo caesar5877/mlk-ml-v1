@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}</title>
+<link href="{dede:global.cfg_templeturl/}/skin-red/css/redstyle.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+*html #banner
+{
+	background-image: none;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{dede:global.cfg_templeturl/}/skin-red/images/banner.png', sizingMethod='crop');
+}
+</style>
+</head>
+<body>
+{dede:include filename='header.htm' /}
+<div class="wrapper position">
+  <div class="fLeft"> {dede:lang.currentpage/} {dede:field name='position'/} </div>
+  <div class="fRight"></div>
+</div>
+<div class="wrapper">
+  <div class="west">
+    <div class="module gray">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+      </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content">
+            <h2 class="mTB10 aBlack textCenter">
+            	{dede:field.typename/}
+            </h2>
+            <div class="artContent">
+             <table width='98%'><tr><td>
+								{dede:field name='content' /}
+							</td></tr></table>
+						</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+  </div>
+  <div class="east">
+    <div class="module black">
+      <div class="top">
+        <div class="t_l"></div>
+        <div class="t_r"></div>
+        <em>{dede:lang.aboutus/}</em> </div>
+      <div class="mid">
+        <div class="m_l">
+          <div class="m_r">
+            <div class="content" style="padding:0; margin:0">
+              <ul id="navigation">
+                <ul class="menu">
+                  {dede:channel get='page'}<li><a href='[field:typeurl/]'>[field:typename/]</a></li>{/dede:channel}
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="b_l"></div>
+        <div class="b_r"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{dede:include filename='footer.htm' /}
+
+</body>
+</html>

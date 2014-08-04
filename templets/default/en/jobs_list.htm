@@ -1,0 +1,90 @@
+{dede:tpllang name='en' /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:lang.jobs/}</title>
+<link href="{dede:global.cfg_templeturl/}/default/images-ent/global.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templeturl/}/default/images-ent/page.css" rel="stylesheet" type="text/css" />
+<meta name="keywords" content="{dede:field.keywords /}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+</head>
+<body>
+{dede:include filename='header.htm' /}
+
+<div id='container'>
+<!-- //left nav -->
+	<div id='leftside'>
+		<ul class='leftbox'>
+			<li>
+			<div class='about'></div>
+			<div class='ct'>
+				<ul class='aboutmenu'>
+				{dede:channel get='page'}<li><a href='[field:typeurl/]'>[field:typename/]</a></li>{/dede:channel}
+				</ul>
+			</div>
+			</li>
+		</ul>
+		<ul class='leftbox'>
+			<li>
+			<div class='news'></div>
+			<div class='ct'>
+				{dede:arclist row='8' titlelen='60' channelid='1'}
+				<div class='linktxt'><a href='[field:arcurl/]'>[field:title/]</a></div>
+				{/dede:arclist}
+			</div>
+			</li>
+		</ul>
+		<div style='height:20px;'></div>
+	</div>
+	<!-- //right main -->
+	<div id='rightside'>
+		<div class='positionText'>{dede:lang.currentpage/} {dede:lang.jobs/}</div>
+		{dede:list pagesize='6'}
+		<table width="99%" border="0" cellpadding="4" cellspacing="1" bgcolor="#E3EFBC" style="margin-top:10px;">
+          <tr>
+            <td colspan="4" bgcolor="#EBFBB5" background='[field:global.cfg_templeturl/]/default/images-ent/jobbg.gif'><b>[field:lang.jobname/] : [field:jobname/]</b> ([field:lang.neednum/]: [field:neednum/])</td>
+          </tr>
+          <tr>
+            <td bgcolor="#FAFCF1" width='18%'><b>[field:lang.needpart/]:</b></td>
+            <td bgcolor="#FFFFFF" width='25%'>[field:needpart/]</td>
+            <td bgcolor="#FAFCF1" width='18%'><b>[field:lang.exptime/]:</b></td>
+            <td bgcolor="#FFFFFF">[field:exptime function="MyDate('Y-m-d', @me)"/]</td>
+          </tr>
+          <tr>
+            <td bgcolor="#FAFCF1"><b>[field:lang.linkman/]</b></td>
+            <td bgcolor="#FFFFFF">[field:linkman/]</td>
+            <td bgcolor="#FAFCF1"><b>[field:lang.linktel/]</b></td>
+            <td bgcolor="#FFFFFF">[field:linktel/]</td>
+          </tr>
+          <tr>
+            <td bgcolor="#FAFCF1"><b>[field:lang.email/]</b></td>
+            <td bgcolor="#FFFFFF">[field:email/]</td>
+            <td bgcolor="#FAFCF1"><b>[field:lang.address/]</b></td>
+            <td bgcolor="#FFFFFF">[field:address/]</td>
+          </tr>
+          <tr>
+            <td colspan="4" bgcolor="#FAFCF1"><b>[field:lang.jobneed/]:</b></td>
+          </tr>
+          <tr>
+            <td colspan="4" bgcolor="#FFFFFF">[field:jobneed/]</td>
+          </tr>
+          <tr>
+            <td colspan="4" bgcolor="#FAFCF1"><b>[field:lang.otherissue/]:</b></td>
+          </tr>
+          <tr>
+            <td colspan="4" bgcolor="#FFFFFF">[field:msg/]</td>
+          </tr>
+        </table>
+	  {/dede:list}
+		<br class='clear'/>
+		<div class='paglist'>
+			{dede:pagelist listsize='7' /}
+		</div>
+	</div>
+	<br class='clear'/>
+</div>
+
+{dede:include filename='footer.htm' /}
+</body>
+</html>

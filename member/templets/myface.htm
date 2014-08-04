@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> <?php echo GetLang('faceset'); ?>  </title>
+<?php include(DEDEMEMBER."/templets/head_inc.htm"); ?>
+<script type="text/javascript" language='javascript' src='js/main.js'></script>
+</head>
+<body>
+<?php include(DEDEMEMBER."/templets/head.htm"); ?>
+<div class="wrapper lineT">
+  <div class="mainBox">
+    <div class="main">
+      <?php include(DEDEMEMBER."/templets/menu.php"); ?>
+      <div class="dedeMain">
+        <div class="location"> <?php echo GetLang('personaldata'); ?>  </div>
+        <div class="titleTabBar bgGreen lineTB">
+          <ul>
+            <li><a href="myinfo.php"><?php echo GetLang('mydata'); ?></a></li>
+            <li class="select"><a href=""><?php echo GetLang('faceset'); ?></a></li>
+          </ul>
+        </div>
+        <form class="mTB10 mL10 mR10" action="myface.php" method="post" enctype="multipart/form-data" name="form1">
+          <input type="hidden" name="dopost" value="save" />
+          <div class="titleBar bgGrass lineB">
+            <div class="fLeft"><strong> <?php echo GetLang('faceset'); ?> </strong></div>
+            <div class="fRight titSecondary white" style="margin-top:5px;"></div>
+          </div>
+          <table cellspacing="1" class="submit">
+            <tbody>
+              <tr>
+                <td width="15%" align="right" valign="top"><?php echo GetLang('desurl'); ?></td>
+                <td><input name='oldface' type='hidden' id='oldface' value='<?php echo $face; ?>' />
+                  <input name='faceurl' type='text' id='faceurl' size='35' class='text' style='width:250px' value='<?php echo $face; ?>' />
+                </td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><?php echo GetLang('choosefile'); ?></td>
+                <td>
+                	<input name="face" type="file" id="face" size="45" />
+                  180 x 180px
+                </td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><?php echo GetLang('oldface'); ?></td>
+                <td>
+                <div id='faceview' class='overflow mTB10 litPic' style="width:180px;height:180px;text-align:center;vertical-align:middle;line-height:180px;display:table-cell;">
+        <?php
+       	if($face!='') echo " <img class='' src='$face' style='_margin-top:expression(( 180 - this.height ) / 2);' />\r\n";
+       	?>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td height="45">&nbsp;</td>
+                <td height="45">
+                	<button class="button2" type="submit"><?php echo GetLang('update'); ?></button>
+                  <button class="button2 mL10" type="reset"><?php echo GetLang('reset'); ?></button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </form>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<?php include(DEDEMEMBER."/templets/foot.htm"); ?>
+</div>
+</body>
+</html>

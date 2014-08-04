@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:lang.searchresult/} : {dede:global.keyword/}</title>
+<link href="{dede:global.cfg_templeturl/}/skin-red/css/redstyle.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+*html #banner
+{
+	background-image: none;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{dede:global.cfg_templeturl/}/skin-red/images/banner.png', sizingMethod='crop');
+}
+</style>
+</head>
+<body>
+{dede:include filename='header.htm' /}
+<div class="wrapper position">
+  <div class="fLeft"> {dede:lang.currentpage/} &gt;&gt; {dede:lang.searchresult/} [<font color='red'>{dede:global.keyword/}</font>] </div>
+  <div class="fRight"></div>
+</div>
+<div class="module gray wrapper">
+  <div class="top">
+    <div class="t_l"></div>
+    <div class="t_r"></div>
+  </div>
+  <div class="mid">
+    <div class="m_l">
+      <div class="m_r">
+        <div class="content" id="resultlist">
+        	{dede:list pagesize='12' listtype='text'}
+          <div class="item">
+            <h3><a href="[field:arcurl/]" target="_blank" class='title'>[field:title/]</a></h3>
+            <p class="intro">[field:description/]...</p>
+            <p class="info"> <small>[field:lang.type/] : </small><span> <a href="[field:typeurl/]" target="_blank">[field:typename/]</a></span> <small>[field:lang.click/] : </small><span> [field:click/]</span> <small>[field:lang.datetime/] : </small><span> [field:stime/]</span> </p>
+            <p><span><a href="[field:arcurl/]" target="_blank">[field:arcurl/]</a></span></p>
+          </div>
+          {/dede:list}
+          <br class='clear'/>
+					<div class='paglist'>
+							{dede:pagelist listsize='7' /}
+					</div>
+					<br class='clear'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="b_l"></div>
+    <div class="b_r"></div>
+  </div>
+</div>
+
+{dede:include filename='footer.htm' /}
+
+</body>
+</html>

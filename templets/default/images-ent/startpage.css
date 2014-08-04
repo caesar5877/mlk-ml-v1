@@ -1,0 +1,91 @@
+.indexbanner {
+	margin-top:1px;
+	width:960px;
+	height:292px;
+	background:url(index-banner.gif) no-repeat;
+}
+
+.indexct dl {
+	float:left;
+}
+
+.indexct .product dt {
+	width:716px;
+	height:30px;
+	font-size:1px;
+	color:#a8ca41;
+	background:url(index-products.gif) no-repeat;
+}
+
+.indexct .product dd {
+	width:716px;
+	height:196px;
+	background:#bdd95a;
+	overflow:hidden;
+}
+
+.indexct .news dt {
+	width:244px;
+	height:30px;
+	font-size:1px;
+	color:#77a621;
+	background:url(index-news.gif) no-repeat;
+}
+
+.indexct .news dd {
+	height:196px;
+	background:#9cc337;
+	overflow:hidden;
+}
+
+.linktxt {
+	padding:0 0 0 15px;
+	line-height:24px;
+	height:24px;
+	width:200px;
+	background:url(index-ico.gif) 6px 10px no-repeat;
+	overflow:hidden;
+}
+
+#MarqueePictues {
+  margin-top:15px;
+  margin-left:45px;
+  text-align:center;
+  width:610px;
+}
+#MarqueePictues div.tb {
+  margin-left:2px;
+  border-left:#CCCCCC 1px dashed;
+  text-align:center;
+  vertical-align:middle;
+  height:120px;
+  width:605px;
+  overflow:hidden;
+}
+
+#MarqueePictues div.ptxt {
+	line-height:20px;
+	height:20px;
+	width:120px;
+	overflow:hidden;
+}
+
+#MarqueePictues img {
+  height:90px;
+  margin:3px;
+  border:#DDDDDD 1px dashed;
+}
+
+#flink {
+	width:680px;
+	height:24px;
+	line-height:24px;
+	background:#DBEB7F;
+	margin:24px 0 0 16px;
+	padding:0 0 0 6px;
+	overflow:hidden;
+}
+
+#flink a {
+	margin-right:10px;
+}

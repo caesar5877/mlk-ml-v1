@@ -1,0 +1,279 @@
+/***********ÆÕÍ¨Ò³ÃæCSS*********/
+
+#leftside {
+	width:220px;
+	text-align:left;
+	float:left;
+}
+
+#rightside {
+	width:726px;
+	text-align:left;
+	float:right;
+}
+
+#rightside .position {
+	padding-left:30px;
+	background:url(ico-3.gif) 10px 9px no-repeat;
+	margin-top:5px;
+	margin-bottom:8px;
+	height:28px;
+	line-height:28px;
+	border-bottom:1px dashed #c8c8c8;
+}
+
+#rightside .positionText, .positionText {
+	padding-left:30px;
+	background:url(ico-3.gif) 10px 9px no-repeat;
+	margin-top:5px;
+	margin-bottom:0px;
+	height:28px;
+	line-height:28px;
+	border-bottom:1px dashed #c8c8c8;
+}
+
+#rightside .imglist .imgitem 
+{
+	float:left;
+	margin:7px 8px 9px 5px;
+}
+
+#rightside .imglist .img {
+	 width:156px;
+	 padding:8px 2px 6px 10px;
+	 height:118px;
+	 background: url(stamp-bg.gif) no-repeat;
+}
+
+#rightside .imglist .title {
+	width:158px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	/* background:url(imgbg.gif); */
+	border-bottom:1px dashed #dedede;
+	overflow:hidden;
+}
+
+#rightside .content {
+	line-height:180%;
+	font-size:14px;
+	margin-bottom:8px;
+}
+
+#rightside .paglist, .paglist {
+	text-align:center;
+	height:24px;
+	line-height:24px;
+	background-color:#F4F8E9;
+	/* border:1px solid #C2CE9B; */
+	margin:6px 0 6px 0;
+}
+
+#rightside .paglist a {
+	margin-left:3px;
+	/*border:1px solid #cdcdcd;
+	background-color:#F4FBDD;
+	padding:0 2px 0 2px;*/
+}
+
+#rightside .pubdate, .pubdate {
+	float:right;
+	font-size:11px;
+	color:#666;
+	padding-right:10px;
+}
+
+#rightside .listitem, .listitem {
+	border-bottom:1px dashed #cdcdcd;
+	line-height:28px;
+	padding-left:20px;
+	background:url(ico-7.gif) 8px 11px no-repeat;
+}
+
+#rightside .textmain .actbox {
+	border-top:1px dashed #cdcdcd;
+	padding-top:6px;
+	padding-right:20px;
+	margin-bottom:6px;
+}
+
+#rightside .textmain .actbox li {
+	float:right;
+	padding-left:28px;
+	line-height:14px;
+	background:url(actbox-ico.gif) no-repeat;
+}
+
+#rightside .actbox li.act-fav {
+	background-position:12px -73px;
+}
+#rightside .actbox li.act-pus {
+	background-position:12px 0px;
+}
+#rightside .actbox li.act-pnt {
+	background-position:12px -109px;
+}
+#rightside .actbox li.act-fb {
+	background-position:12px 0px;
+}
+
+#rightside .productInfo {
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+#rightside .articleinfo {
+	width:99%;
+	border-bottom:1px solid #ccc;
+	font-size:11px;
+	color:#999;
+	line-height:24px;
+	margin-bottom:10px;
+}
+
+#rightside .bigpic img {
+	max-width:80%;
+	_width:expression(this.idth > 600 ? "600px" : "" );
+}
+
+.textmain h1 {
+	margin-top:18px;
+}
+
+.leftbox {
+	margin-top:10px;
+	width:203px;
+	margin-left:8px;
+}
+
+.leftbox .about {
+	height:29px;
+	background:url(left-about.gif);
+}
+
+.leftbox .news {
+	height:29px;
+	background:url(left-news.gif);
+}
+
+.leftbox .product {
+	height:29px;
+	background:url(left-product.gif);
+}
+
+.leftbox .ct {
+	padding:6px;
+	border:1px solid #c3d7f4;
+	background:#fff;
+}
+
+.cattree dt {
+	padding-left:16px;
+	background:url(ico-5.gif) 3px 8px no-repeat;
+	height:24px;
+	line-height:24px;
+}
+
+.cattree dd {
+	padding-left:10px;
+}
+
+.aboutmenu li {
+	padding-left:18px;
+	background:url(ico-4.gif) 3px 4px no-repeat;
+	height:24px;
+	line-height:24px;
+}
+
+.pagesplitCt {
+	margin-bottom:6px;
+}
+.pagesplit {
+	padding:12px 0px 12px 16px;
+	margin: 0px auto;
+}
+.pagesplit li{
+	float:left;
+	line-height:17px;
+	margin-right:6px;
+}
+.pagesplit li a{
+	float:left;
+	padding:2px 4px 2px;
+	color:#666;
+	border-bottom:1px solid #EEE;
+}
+.pagesplit li a:hover{
+	color:#690;
+	text-decoration:none;
+	padding:2px 4px 1px;
+	border-bottom:2px solid #690;
+}
+.pagesplit li.thisclass a, .pagebox ul li.thisclass a:hover{
+	color:#F63;
+	padding:2px 4px 1px;
+	border-bottom:2px solid #F63;
+	font-weight:bold;
+}
+.pagesplit .pageinfo{
+	float:right;
+	line-height:21px;
+	padding:12px 10px 12px 16px;
+	color:#999;
+}
+.pagesplit .pageinfo strong{
+	color:#666;
+	font-weight:normal;
+	margin:0px 2px;
+}
+
+.seachmain {
+	background:#fff;
+}
+
+.resultlist{
+	padding:2px 20px;
+}
+.resultlist h2{
+	display:none;
+}
+.item h3 {
+	padding: 0px;
+	padding-left: 20px;
+	background:url(ico-7.gif) 5px 8px no-repeat;
+}
+.item h3 .title{
+	font-size:14px;
+	font-weight:normal;
+	line-height:25px;
+	text-decoration:underline;
+}
+.item h3 .title:hover{
+	text-decoration:none;	
+}
+.item {
+	margin-top:16px;
+	margin-left: 8px;
+}
+.item .intro{
+	font-size:14px;
+	line-height:19px;
+	padding-left:2px;
+	color:#777;
+}
+.item .info{
+	font-size:12px;
+	line-height:26px;
+	color:#080;
+}
+.item .info small{
+	font-size:12px;
+}
+.item .info span{
+	margin-right:10px;
+}
+.item .info a{
+	color:#444;
+}
+
