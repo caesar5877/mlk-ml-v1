@@ -48,7 +48,7 @@ function GetCurContentAlbum($body,$rfurl,&$firstdd)
 		}
 		$value = trim($value);
 		$itype =  substr($value,-4,4);
-		if(!eregi("\.(gif|jpg|png)",$itype))
+        if( !preg_match("#\.(gif|jpg|png)#", $itype) )
 		{
 			$itype = ".jpg";
 		}
@@ -109,7 +109,7 @@ function GetCurContent($body)
 		{
 			continue;
 		}
-		if($cfg_basehost!=$basehost && eregi($cfg_basehost,$value))
+        if($cfg_basehost != $basehost && preg_match("#".$cfg_basehost."#i", $value))
 		{
 			continue;
 		}
@@ -457,7 +457,7 @@ function GetDDImage($litpic,$picname,$isremote)
 	{
 
 		$picname = trim($picname);
-		if($isremote==1 && eregi("^http://",$picname))
+        if($isremote==1 && preg_match("#^http:\/\/#i", $picname))
 		{
 			$litpic = $picname;
 
@@ -478,7 +478,7 @@ function GetDDImage($litpic,$picname,$isremote)
 		}
 		else
 		{
-			if($litpic=='ddfirst' && !eregi("^http://",$picname))
+            if($litpic=='ddfirst' && !preg_match("#^http:\/\/#i", $picname))
 			{
 				$oldpic = $cfg_basedir.$picname;
 				$litpic = str_replace('.','_lit.',$picname);
@@ -652,7 +652,7 @@ function AnalyseHtmlBody($body,&$description,&$litpic,&$keywords,$dtype='')
 //图集里大图的小图
 function GetImageMapDD($filename,$ddm,$oldname='')
 {
-	if($oldname!='' && !eregi("^http://",$oldname))
+	if($oldname!='' && !preg_match("#^http:\/\/#i", $oldname))
 	{
 		$ddpicok = $oldname;
 	}

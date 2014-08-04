@@ -47,8 +47,8 @@ function TestIsFileDir($dirname)
 function MkTmpDir($tmpdir,$filename)
 {
 	$basedir = DEDEROOT.'/data/'.$tmpdir;
-	$dirname = trim(ereg_replace("[\\/]{1,}",'/',$filename));
-	$dirname = ereg_replace("([^/]*)$","",$dirname);
+    $dirname = trim(preg_replace("#[\\\\\/]{1,}#", '/', $filename));
+    $dirname = preg_replace("#([^\/]*)$#","",$dirname);
 	if(!is_dir($basedir)) {
 		mkdir($basedir,0777);
 	}
@@ -109,7 +109,7 @@ if($dopost=='test')
 	$n = 0;
 	foreach($verlists as $verstr)
 	{
-			if( empty($verstr) || ereg("^//",$verstr) ) {
+            if( empty($verstr) || preg_match("#^\/\/#", $verstr) )  {
 				continue ;
 			}
 			list($vtime,$vlang,$issafe,$vmsg) = explode(',',$verstr);

@@ -19,7 +19,7 @@ if(empty($action))
 }
 else
 {
-	if(ereg("[^0-9-]",$diyid)||empty($diyid))
+	if(preg_match("#[^0-9-]#", $diyid)||empty($diyid))
 	{
 		ShowMsg("<font color=red>'自定义表单diyid'</font>必须为数字！","-1");
 		exit();

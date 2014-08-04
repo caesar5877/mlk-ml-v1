@@ -42,7 +42,7 @@ if($dopost=='save')
 	//修改Email
 	if($email != $row['email'])
 	{
-			if(!eregi("^[0-9a-z][a-z0-9\._-]{1,}@[a-z0-9-]{1,}[a-z0-9]\.[a-z\.]{1,}[a-z]$",$email))
+			if(!preg_match('/^[a-z0-9]+([\+_\-\.]?[a-z0-9]+)*@([a-z0-9]+[\-]?[a-z0-9]+\.)+[a-z]{2,6}$/i', $email))
 			{
 				ShowMsg( GetLang('err_email'),'-1');
 				exit();

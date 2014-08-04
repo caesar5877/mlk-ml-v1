@@ -26,7 +26,7 @@ if($action=='')
 //-----------------------------------
 else if($action=='send')
 {
-	if(!eregi("^[0-9a-z][a-z0-9\.-]{1,}@[a-z0-9-]{1,}[a-z]\.[a-z\.]{1,}[a-z]$",$email))
+	if(!preg_match('/^[a-z0-9]+([\+_\-\.]?[a-z0-9]+)*@([a-z0-9]+[\-]?[a-z0-9]+\.)+[a-z]{2,6}$/i', $email))
 	{
 		echo "<script>alert('Email格式不正确!');history.go(-1);</script>";
 		exit();

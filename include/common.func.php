@@ -93,7 +93,7 @@ function GetAlabNum($fnum)
 	//$fnums = "0123456789";
 	$fnums = array("0","1","2","3","4","5","6","7","8","9");
 	$fnum = str_replace($nums,$fnums,$fnum);
-	$fnum = ereg_replace("[^0-9\.-]",'',$fnum);
+	$fnum = preg_replace("#[^0-9\.-]#",'',$fnum);
 	if($fnum=='')
 	{
 		$fnum=0;
@@ -239,18 +239,18 @@ function cn_substr_utf8($str, $length, $start=0)
 function GetMkTime($dtime)
 {
 	global $cfg_cli_time;
-	if(!ereg("[^0-9]",$dtime))
+	if(!(preg_match("#[^0-9]#",$dtime)))
 	{
 		return $dtime;
 	}
 	$dtime = trim($dtime);
 	$dt = Array(1970,1,1,0,0,0);
-	$dtime = ereg_replace("[\r\n\t]|日|秒"," ",$dtime);
+	$dtime = preg_replace("#[\r\n\t]|日|秒#"," ",$dtime);
 	$dtime = str_replace("年","-",$dtime);
 	$dtime = str_replace("月","-",$dtime);
 	$dtime = str_replace("时",":",$dtime);
 	$dtime = str_replace("分",":",$dtime);
-	$dtime = trim(ereg_replace("[ ]{1,}"," ",$dtime));
+	$dtime = trim(preg_replace("#[ ]{1,}#"," ",$dtime));
 	$ds = explode(" ",$dtime);
 	$ymd = explode("-",$ds[0]);
 	if(!isset($ymd[1]))
@@ -291,7 +291,7 @@ function GetMkTime($dtime)
 	}
 	foreach($dt as $k=>$v)
 	{
-		$v = ereg_replace("^0{1,}",'',trim($v));
+		$v = preg_replace("#^0{1,}#",'',trim($v));
 		if($v=='')
 		{
 			$dt[$k] = 0;
@@ -582,8 +582,8 @@ function FtpMkdir($truepath,$mmode,$isMkdir=true)
 {
 	global $cfg_basedir,$cfg_ftp_root,$g_ftpLink;
 	OpenFtp();
-	$ftproot = ereg_replace($cfg_ftp_root.'$','',$cfg_basedir);
-	$mdir = ereg_replace('^'.$ftproot,'',$truepath);
+	$ftproot = preg_replace("#".$cfg_ftp_root."$#",'',$cfg_basedir);
+	$mdir = preg_replace("#^".$ftproot."#",'',$truepath);
 	if($isMkdir)
 	{
 		ftp_mkdir($g_ftpLink,$mdir);
@@ -693,19 +693,19 @@ function HtmlReplace($str,$rptype=0)
 	{
 		$str = htmlspecialchars($str);
 		$str = str_replace("　",' ',$str);
-		$str = ereg_replace("[\r\n\t ]{1,}",' ',$str);
+		$str = preg_replace("#[\r\n\t ]{1,}#",' ',$str);
 	}
 	else if($rptype==2)
 	{
 		$str = htmlspecialchars($str);
 		$str = str_replace("　",'',$str);
-		$str = ereg_replace("[\r\n\t ]",'',$str);
+		$str = preg_replace("#[\r\n\t ]#",'',$str);
 	}
 	else
 	{
-		$str = ereg_replace("[\r\n\t ]{1,}",' ',$str);
-		$str = eregi_replace('script','ｓｃｒｉｐｔ',$str);
-		$str = eregi_replace("<[/]{0,1}(link|meta|ifr|fra)[^>]*>",'',$str);
+		$str = preg_replace("#[\r\n\t ]{1,}#",' ',$str);
+		$str = preg_replace("#script#i",'ｓｃｒｉｐｔ',$str);
+		$str = preg_replace("#<[/]{0,1}(link|meta|ifr|fra)[^>]*>#i",'',$str);
 	}
 	return addslashes($str);
 }
@@ -728,7 +728,7 @@ function FilterSearch($keyword)
 	global $cfg_soft_lang;
 	if($cfg_soft_lang=='utf-8')
 	{
-		$keyword = ereg_replace("[ \"\r\n\t\$\\><']",'',$keyword);
+		$keyword = preg_replace("#[ \"\r\n\t\$\\><']#",'',$keyword);
 		if($keyword != stripslashes($keyword))
 		{
 			return '';
@@ -757,7 +757,7 @@ function FilterSearch($keyword)
 			}
 			else
 			{
-				if(eregi("[^0-9a-z@#\.]",$keyword[$i]))
+				if(preg_match("#[^0-9a-z@#\.]#i",$keyword[$i]))
 				{
 					$restr .= ' ';
 				}
@@ -785,7 +785,7 @@ function GetOneArchive($aid)
 {
 	global $dsql;
 	include_once(DEDEINC."/channelunit.func.php");
-	$aid = trim(ereg_replace('[^0-9]','',$aid));
+	$aid = trim(preg_replace("#[^0-9]#",'',$aid));
 	$reArr = array();
 
 	$chRow = $dsql->GetOne("Select arc.*,ch.maintable,ch.addtable,ch.issystem From `#@__arctiny` arc left join `#@__channeltype` ch on ch.id=arc.channel where arc.id='$aid' ");
@@ -866,7 +866,7 @@ function jstrim($str,$len)
 	$str = preg_replace("/{quote}(.*){\/quote}/is",'',$str);
 	$str = str_replace('&lt;br/&gt;',' ',$str);
 	$str = cn_substr($str,$len);
-	$str = ereg_replace("['\"\r\n]","",$str);
+	$str = preg_replace("#['\"\r\n]#","",$str);
 	return $str;
 }
 

@@ -26,7 +26,7 @@ else
 	$notes = trim($notes);
 
 	//对Base64格式的规则进行解码
-	if(ereg('^BASE64:',$notes))
+    if(preg_match("#^BASE64:#", $notes))
 	{
 		if(!ereg(':END$',$notes))
 		{
@@ -35,7 +35,7 @@ else
 		}
 		$notess = explode(':',$notes);
 		$notes = $notess[1];
-		$notes = base64_decode(ereg_replace("[\r\n\t ]",'',$notes)) OR die('配置字符串有错误！');
+		$notes = base64_decode(preg_replace("#[\r\n\t ]#",'',$notes)) OR die('配置字符串有错误！');
 	}
 	else
 	{

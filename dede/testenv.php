@@ -64,7 +64,7 @@ else
 	{
 		$needDir = trim($needDir);
 		$needDir = str_replace("\\","/",$needDir);
-		$needDir = ereg_replace("/{1,}","/",$needDir);
+		$needDir = preg_replace("/\/{1,}/","/",$needDir);
 		if(CreateDir($needDir))
 		{
 			echo "成功更改或创建：{$needDir} <br>";

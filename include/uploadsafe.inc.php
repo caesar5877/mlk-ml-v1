@@ -52,10 +52,10 @@ function MemberUploads($upname,$handname,$userid=0,$utype='image',$exname='',$ma
 	if(is_uploaded_file($GLOBALS[$upname]))
 	{
 		$nowtme = time();
-		$GLOBALS[$upname.'_name'] = trim(ereg_replace("[ \r\n\t\*\%\\/\?><\|\":]{1,}",'',$GLOBALS[$upname.'_name']));
+		$GLOBALS[$upname.'_name'] = trim(preg_replace("#[ \r\n\t\*\%\\/\?><\|\":]{1,}#",'',$GLOBALS[$upname.'_name']));
 		if($utype=='image')
 		{
-			if(!eregi("\.(".$cfg_imgtype.")$",$GLOBALS[$upname.'_name']))
+			if(!preg_match("#\.(".$cfg_imgtype.")$#i",$GLOBALS[$upname.'_name']))
 			{
 				ShowMsg("你所上传的图片类型不在许可列表，请上传{$cfg_imgtype}类型！",'-1');
 				exit();
@@ -68,17 +68,17 @@ function MemberUploads($upname,$handname,$userid=0,$utype='image',$exname='',$ma
 				exit();
 			}
 		}
-		else if($utype=='flash' && !eregi("\.swf$",$GLOBALS[$upname.'_name']))
+		else if($utype=='flash' && !preg_match("#\.swf$#i",$GLOBALS[$upname.'_name']))
 		{
 			ShowMsg("上传的文件必须为flash文件！",'-1');
 			exit();
 		}
-		else if($utype=='media' && !eregi("\.(".$cfg_mediatype.")$",$GLOBALS[$upname.'_name']))
+		else if($utype=='media' && !preg_match("#\.(".$cfg_mediatype.")$#i",$GLOBALS[$upname.'_name']))
 		{
 			ShowMsg("你所上传的文件类型必须为：".$cfg_mediatype,'-1');
 			exit();
 		}
-		else if(!eregi("\.(".$cfg_mb_addontype.")$",$GLOBALS[$upname.'_name']))
+		else if(!preg_match("#\.(".$cfg_mb_addontype.")$#i",$GLOBALS[$upname.'_name']))
 		{
 			ShowMsg("你所上传的文件类型不被允许！",'-1');
 			exit();
@@ -108,7 +108,7 @@ function MemberUploads($upname,$handname,$userid=0,$utype='image',$exname='',$ma
 		}
 
 		//强制禁止的文件类型
-		if(eregi("asp|php|pl|cgi|jsp|shtm",$sname))
+		if(preg_match("#asp|php|pl|cgi|jsp|shtm#i",$sname))
 		{
 			ShowMsg("你上传的文件为系统禁止的类型！",'-1');
 			exit();

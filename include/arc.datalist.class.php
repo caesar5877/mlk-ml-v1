@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 if(!defined('DEDEINC')) exit('Request Error!');
 require_once(DEDEINC."/arc.partview.class.php");
 @set_time_limit(0);
@@ -22,7 +22,7 @@ class DataList
 	var $Template;
 	var $QueryTime;
 	var $GetValues;
-	//php5¹¹Ôìº¯Êı
+	//php5æ„é€ å‡½æ•°
 	function __construct($sql, $template, $typeid=0)
 	{
 		global $dsql;
@@ -38,7 +38,7 @@ class DataList
 		$this->dtp2 = new DedeTagParse();
 		$this->dtp2->SetNameSpace('field', '[', ']');
 		
-		//Èç¹ûĞèÒª£¬ »ñµÃÀ¸Ä¿ĞÅÏ¢
+		//å¦‚æœéœ€è¦ï¼Œ è·å¾—æ ç›®ä¿¡æ¯
 		if(!empty($typeid))
 		{
 			$this->TypeLink = new TypeLink($typeid);
@@ -46,32 +46,32 @@ class DataList
 			$this->Fields = $this->TypeLink->TypeInfos;
 			$this->Fields['id'] = $typeid;
 			$this->Fields['position'] = $this->TypeLink->GetPositionLink(true);
-			$this->Fields['title'] = ereg_replace("[<>]"," / ",$this->TypeLink->GetPositionLink(false));
+			$this->Fields['title'] = preg_replace("#[<>]#"," / ",$this->TypeLink->GetPositionLink(false));
 			$this->Fields['rsslink'] = $GLOBALS['cfg_cmsurl']."/data/rss/".$this->TypeID.".xml";
-			//ÉèÖÃ»·¾³±äÁ¿
+			//è®¾ç½®ç¯å¢ƒå˜é‡
 			SetSysEnv($this->TypeID,$this->Fields['typename'],0,'','list');
 			$this->Fields['typeid'] = $this->TypeID;
 		}
-		//ÉèÖÃÒ»Ğ©È«¾Ö²ÎÊıµÄÖµ
+		//è®¾ç½®ä¸€äº›å…¨å±€å‚æ•°çš„å€¼
 		foreach($GLOBALS['PubFields'] as $k=>$v) $this->Fields[$k] = $v;
 	}
 
-	//php4¹¹Ôìº¯Êı
+	//php4æ„é€ å‡½æ•°
 	function DataList($sql, $template, $typeid=0)
 	{
 		$this->__construct($sql, $template, $typeid);
 	}
-	//¹Ø±ÕÏà¹Ø×ÊÔ´
+	//å…³é—­ç›¸å…³èµ„æº
 	function Close()
 	{
 
 	}
 
-	//Í³¼ÆÁĞ±íÀïµÄ¼ÇÂ¼
+	//ç»Ÿè®¡åˆ—è¡¨é‡Œçš„è®°å½•
 	function CountRecord()
 	{
 		global $lang,$cfg_df_lang;
-		//Í³¼ÆÊı¾İ¿â¼ÇÂ¼
+		//ç»Ÿè®¡æ•°æ®åº“è®°å½•
 		$this->TotalResult = -1;
 		if(isset($GLOBALS['TotalResult'])) $this->TotalResult = $GLOBALS['TotalResult'];
 		if(isset($GLOBALS['PageNo'])) $this->PageNo = $GLOBALS['PageNo'];
@@ -79,8 +79,8 @@ class DataList
 		
 		if($this->TotalResult==-1)
 		{
-			$countQuery = eregi_replace("select[ \r\n\t](.*)[ \r\n\t]from","Select count(*) as dd From", $this->SourceSql);
-			$countQuery = eregi_replace('order[ \r\n\t]{1,}by(.*)', '', $countQuery);
+			$countQuery = preg_replace("#select[ \r\n\t](.*)[ \r\n\t]from#i","Select count(*) as dd From", $this->SourceSql);
+			$countQuery = preg_replace("#order[ \r\n\t]{1,}by(.*)#i", '', $countQuery);
 			$row = $this->dsql->GetOne($countQuery);
 			if(is_array($row)) {
 				$this->TotalResult = $row['dd'];
@@ -90,12 +90,12 @@ class DataList
 			}
 		}
 
-		//³õÊ¼»¯ÁĞ±íÄ£°å£¬²¢Í³¼ÆÒ³Ãæ×ÜÊı
+		//åˆå§‹åŒ–åˆ—è¡¨æ¨¡æ¿ï¼Œå¹¶ç»Ÿè®¡é¡µé¢æ€»æ•°
 		$tempfile = $this->Template;
 		if(!file_exists($tempfile) || !is_file($tempfile))
 		{
-			$tempfile = ereg_replace("^[^/\\]*/", "/", $tempfile);
-			echo "Ä£°åÎÄ¼ş {$tempfile} ²»´æÔÚ£¬ÎŞ·¨½âÎöÎÄµµ£¡";
+			$tempfile = preg_replace("#^[^/\\]*\/#", "/", $tempfile);
+			echo "æ¨¡æ¿æ–‡ä»¶ {$tempfile} ä¸å­˜åœ¨ï¼Œæ— æ³•è§£ææ–‡æ¡£ï¼";
 			exit();
 		}
 		
@@ -121,7 +121,7 @@ class DataList
 		$this->TotalPage = ceil($this->TotalResult/$this->PageSize);
 	}
 
-	//ÏÔÊ¾ÁĞ±í
+	//æ˜¾ç¤ºåˆ—è¡¨
 	function Display()
 	{
 		$this->CountRecord();
@@ -130,7 +130,7 @@ class DataList
 		$this->dtp->Display();
 	}
 
-	//½âÎöÄ£°å£¬¶Ô¹Ì¶¨µÄ±ê¼Ç½øĞĞ³õÊ¼¸øÖµ
+	//è§£ææ¨¡æ¿ï¼Œå¯¹å›ºå®šçš„æ ‡è®°è¿›è¡Œåˆå§‹ç»™å€¼
 	function ParseTempletsFirst()
 	{
 		if(isset($this->TypeLink->TypeInfos['reid']))
@@ -143,7 +143,7 @@ class DataList
 		MakeOneTag($this->dtp,$this);
 	}
 
-	//½âÎöÄ£°å£¬¶ÔÄÚÈİÀïµÄ±ä¶¯½øĞĞ¸³Öµ
+	//è§£ææ¨¡æ¿ï¼Œå¯¹å†…å®¹é‡Œçš„å˜åŠ¨è¿›è¡Œèµ‹å€¼
 	function ParseDMFields($PageNo,$ismake=1)
 	{
 		foreach($this->dtp->CTags as $tagid=>$ctag)
@@ -177,7 +177,7 @@ class DataList
 		}
 	}
 
-	//»ñµÃÖ°Î»ÁĞ±í
+	//è·å¾—èŒä½åˆ—è¡¨
 	function GetList($line, $innertext)
 	{
 		$rsvalue = '';
@@ -195,7 +195,7 @@ class DataList
 					{
 							if($ctag->GetName()=='array')
 							{
-								$this->dtp2->Assign($k,$arr); //´«µİÕû¸öÊı×é£¬ÔÚrunphpÄ£Ê½ÖĞÓĞÌØÊâ×÷ÓÃ
+								$this->dtp2->Assign($k,$arr); //ä¼ é€’æ•´ä¸ªæ•°ç»„ï¼Œåœ¨runphpæ¨¡å¼ä¸­æœ‰ç‰¹æ®Šä½œç”¨
 							}
 							else
 							{
@@ -211,13 +211,13 @@ class DataList
 		return $rsvalue;
 	}
 	
-	//ÉèÖÃÍøÖ·µÄGet²ÎÊı¼üÖµ
+	//è®¾ç½®ç½‘å€çš„Getå‚æ•°é”®å€¼
 	function SetParameter($key,$value)
 	{
 		$this->GetValues[$key] = $value;
 	}
 
-	//»ñÈ¡¶¯Ì¬µÄ·ÖÒ³ÁĞ±í
+	//è·å–åŠ¨æ€çš„åˆ†é¡µåˆ—è¡¨
 	function GetPageListDM($list_len,$listitem="index,end,pre,next,pageno")
 	{
 		$GLOBALS['userLang'] = $this->Lang;
@@ -225,7 +225,7 @@ class DataList
 		$nextpage = '';
 		$prepagenum = $this->PageNo-1;
 		$nextpagenum = $this->PageNo+1;
-		if($list_len==""||ereg("[^0-9]",$list_len))
+		if($list_len==""||preg_match("#[^0-9-]#",$list_len))
 		{
 			$list_len=3;
 		}
@@ -256,7 +256,7 @@ class DataList
 		$hidenform .= "<input type='hidden' name='TotalResult' value='".$this->TotalResult."'>\r\n";
 		$purl .= "?".$geturl;
 
-		//»ñµÃÉÏÒ»Ò³ºÍÏÂÒ»Ò³µÄÁ´½Ó
+		//è·å¾—ä¸Šä¸€é¡µå’Œä¸‹ä¸€é¡µçš„é“¾æ¥
 		if($this->PageNo != 1)
 		{
 			$prepage.=" <a href='".$purl."PageNo=$prepagenum'>".GetLang('prepage')."</a> \r\n";
@@ -277,7 +277,7 @@ class DataList
 		}
 
 
-		//»ñµÃÊı×ÖÁ´½Ó
+		//è·å¾—æ•°å­—é“¾æ¥
 		$listdd="";
 		$total_list = $list_len * 2 + 1;
 		if($this->PageNo >= $total_list)
@@ -314,7 +314,7 @@ class DataList
 		return $plist;
 	}
 
-	//»ñµÃµ±Ç°µÄÒ³ÃæÎÄ¼şµÄurl
+	//è·å¾—å½“å‰çš„é¡µé¢æ–‡ä»¶çš„url
 	function GetCurUrl()
 	{
 		if(!empty($_SERVER["REQUEST_URI"]))

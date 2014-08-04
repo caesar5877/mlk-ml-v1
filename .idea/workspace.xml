@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f319e671-e4a7-4a41-8ad7-f482b445732d" name="Default" comment="" />
+    <list default="true" readonly="true" id="f319e671-e4a7-4a41-8ad7-f482b445732d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/arc.datalist.class.php" afterPath="$PROJECT_DIR$/include/arc.datalist.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/archives_add.php" afterPath="$PROJECT_DIR$/dede/archives_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/archives_edit.php" afterPath="$PROJECT_DIR$/dede/archives_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/archives_sg_add.php" afterPath="$PROJECT_DIR$/dede/archives_sg_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/archives_sg_edit.php" afterPath="$PROJECT_DIR$/dede/archives_sg_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/taglib/arclist.lib.php" afterPath="$PROJECT_DIR$/include/taglib/arclist.lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/taglib/arclistsg.lib.php" afterPath="$PROJECT_DIR$/include/taglib/arclistsg.lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/article_add.php" afterPath="$PROJECT_DIR$/dede/article_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/article_edit.php" afterPath="$PROJECT_DIR$/dede/article_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/taglib/channelartlist.lib.php" afterPath="$PROJECT_DIR$/include/taglib/channelartlist.lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/co_export.php" afterPath="$PROJECT_DIR$/dede/co_export.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/co_get_corule.php" afterPath="$PROJECT_DIR$/dede/co_get_corule.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/common.func.php" afterPath="$PROJECT_DIR$/include/common.func.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/config.cache.inc.php" afterPath="$PROJECT_DIR$/data/config.cache.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/content_list.php" afterPath="$PROJECT_DIR$/dede/content_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/customfields.func.php" afterPath="$PROJECT_DIR$/include/customfields.func.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/FCKeditor/editor/dialog/dede_image.php" afterPath="$PROJECT_DIR$/include/FCKeditor/editor/dialog/dede_image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/diy_add.php" afterPath="$PROJECT_DIR$/dede/diy_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/file_class.php" afterPath="$PROJECT_DIR$/dede/file_class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/file_pic_view.php" afterPath="$PROJECT_DIR$/dede/file_pic_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/friendlink_add.php" afterPath="$PROJECT_DIR$/dede/friendlink_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/inc/inc_archives_functions.php" afterPath="$PROJECT_DIR$/dede/inc/inc_archives_functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/index_do.php" afterPath="$PROJECT_DIR$/member/index_do.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/job_edit.php" afterPath="$PROJECT_DIR$/dede/job_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plus/jobs.php" afterPath="$PROJECT_DIR$/plus/jobs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/member_scores.php" afterPath="$PROJECT_DIR$/dede/member_scores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/memberlogin.class.php" afterPath="$PROJECT_DIR$/include/memberlogin.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/mychannel_field_add.php" afterPath="$PROJECT_DIR$/dede/mychannel_field_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/mychannel_field_edit.php" afterPath="$PROJECT_DIR$/dede/mychannel_field_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/myface.php" afterPath="$PROJECT_DIR$/member/myface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/myinfo.php" afterPath="$PROJECT_DIR$/member/myinfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/pic_view.php" afterPath="$PROJECT_DIR$/dede/pic_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plus/recommend.php" afterPath="$PROJECT_DIR$/plus/recommend.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/reg_new.php" afterPath="$PROJECT_DIR$/member/reg_new.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/taglib/channel/softlinks.lib.php" afterPath="$PROJECT_DIR$/include/taglib/channel/softlinks.lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/sys_admin_user_add.php" afterPath="$PROJECT_DIR$/dede/sys_admin_user_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/sys_data.php" afterPath="$PROJECT_DIR$/dede/sys_data.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/sys_data_done.php" afterPath="$PROJECT_DIR$/dede/sys_data_done.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/sys_data_revert.php" afterPath="$PROJECT_DIR$/dede/sys_data_revert.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/sys_info.php" afterPath="$PROJECT_DIR$/dede/sys_info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/sys_repair.php" afterPath="$PROJECT_DIR$/dede/sys_repair.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/sys_safetest.php" afterPath="$PROJECT_DIR$/dede/sys_safetest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/templets_main.php" afterPath="$PROJECT_DIR$/dede/templets_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/testenv.php" afterPath="$PROJECT_DIR$/dede/testenv.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/tpl.php" afterPath="$PROJECT_DIR$/dede/tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dede/update_guide.php" afterPath="$PROJECT_DIR$/dede/update_guide.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/uploadsafe.inc.php" afterPath="$PROJECT_DIR$/include/uploadsafe.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,113 +72,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dede_image.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/FCKeditor/editor/dialog/dede_image.php">
+      <file leaf-file-name="arc.datalist.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/arc.datalist.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="12" selection-start="721" selection-end="721" vertical-scroll-proportion="-4.535714" vertical-offset="424" max-vertical-offset="7752">
+            <state line="103" column="46" selection-start="2675" selection-end="2675" vertical-scroll-proportion="-19.807692" vertical-offset="1236" max-vertical-offset="5746">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arclist.lib.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/taglib/arclist.lib.php">
+      <file leaf-file-name="myface.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/member/myface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="333" column="101" selection-start="10858" selection-end="10858" vertical-scroll-proportion="-4.535714" vertical-offset="6200" max-vertical-offset="8284">
-              <folding>
-                <marker date="1407126097584" expanded="true" signature="3568:3633" placeholder="Select id Fr..." />
-                <marker date="1407126097584" expanded="true" signature="5169:5264" placeholder="Select `id`,..." />
-                <marker date="1407126097584" expanded="true" signature="5516:5634" placeholder="Select id,to..." />
-                <marker date="1407126097584" expanded="true" signature="5804:5914" placeholder="Select id,to..." />
-                <marker date="1407126097584" expanded="true" signature="7902:7962" placeholder="Select addta..." />
-                <marker date="1407126097584" expanded="true" signature="8310:8546" placeholder="Select arc.*..." />
-                <marker date="1407126097584" expanded="true" signature="9086:9335" placeholder="Select arc.*..." />
-                <marker date="1407126097584" expanded="true" signature="13404:13474" placeholder="Select cache..." />
-                <marker date="1407126097584" expanded="true" signature="13514:13611" placeholder="Select cache..." />
-                <marker date="1407126097584" expanded="true" signature="13899:14027" placeholder="Select id,ty..#@_..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="likearticle.lib.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/taglib/likearticle.lib.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="101" selection-start="4048" selection-end="4048" vertical-scroll-proportion="-4.214286" vertical-offset="2352" max-vertical-offset="3553">
-              <folding>
-                <marker date="1407126135146" expanded="true" signature="1961:2217" placeholder="Select arc.*..." />
-                <marker date="1407126135146" expanded="true" signature="2343:2581" placeholder="Select arc.*..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="img.lib.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/taglib/channel/img.lib.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="17" selection-start="2169" selection-end="2169" vertical-scroll-proportion="-7.928571" vertical-offset="1507" max-vertical-offset="3021">
+            <state line="13" column="30" selection-start="208" selection-end="208" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plus_spacenewart.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/tpllib/plus_spacenewart.php">
+      <file leaf-file-name="guestbook.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plus/guestbook.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="56" selection-start="1262" selection-end="1262" vertical-scroll-proportion="-4.535714" vertical-offset="614" max-vertical-offset="1520">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="35.384617" vertical-offset="920" max-vertical-offset="1649">
               <folding>
-                <marker date="1407126236675" expanded="true" signature="326:588" placeholder="Select arc.*..." />
+                <marker date="1407129317940" expanded="true" signature="1178:1226" placeholder="Select msg F..." />
+                <marker date="1407129317940" expanded="true" signature="1349:1573" placeholder="INSERT INTO ..." />
+                <marker date="1407129317940" expanded="true" signature="1726:1838" placeholder="..." />
+                <marker date="1407129317940" expanded="false" signature="1782:1813" placeholder="..." />
+                <marker date="1407129317940" expanded="false" signature="2020:2064" placeholder="..." />
+                <marker date="1407129317940" expanded="true" signature="2318:2364" placeholder="select * fro..." />
+                <marker date="1407129317940" expanded="true" signature="2381:2443" placeholder="select * fro..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_do.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/member/index_do.php">
+      <file leaf-file-name="guestbook.htm" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templets/plus/guestbook.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="68" selection-start="2427" selection-end="2427" vertical-scroll-proportion="8.607142" vertical-offset="2711" max-vertical-offset="3078">
-              <folding>
-                <marker date="1407126437447" expanded="true" signature="1054:1116" placeholder="Select mid F..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myinfo.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/member/myinfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="16" selection-start="820" selection-end="820" vertical-scroll-proportion="-4.678571" vertical-offset="705" max-vertical-offset="1425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reg_new.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/member/reg_new.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="8" selection-start="846" selection-end="846" vertical-scroll-proportion="-4.678571" vertical-offset="724" max-vertical-offset="2033">
-              <folding>
-                <marker date="1407113872395" expanded="true" signature="1038:1092" placeholder="Select mid F..." />
-                <marker date="1407113872395" expanded="true" signature="1219:1275" placeholder="Select mid F..." />
-                <marker date="1407113872395" expanded="true" signature="1927:2296" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file_manage_main.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dede/templets/file_manage_main.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="8" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-5.678571" vertical-offset="810" max-vertical-offset="6954">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="co_gather_start.htm" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dede/templets/co_gather_start.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="14" selection-start="819" selection-end="819" vertical-scroll-proportion="0.37570623" vertical-offset="285" max-vertical-offset="2546">
+            <state line="79" column="22" selection-start="1883" selection-end="1883" vertical-scroll-proportion="2.1545138" vertical-offset="102" max-vertical-offset="3944">
               <folding />
             </state>
           </provider>
@@ -145,57 +126,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/dede/templets/archives_edit.htm" />
-        <option value="$PROJECT_DIR$/dede/templets/archives_sg_edit.htm" />
-        <option value="$PROJECT_DIR$/dede/templets/article_edit.htm" />
-        <option value="$PROJECT_DIR$/dede/templets/sys_group_add.htm" />
-        <option value="$PROJECT_DIR$/dede/templets/sys_group_edit.htm" />
-        <option value="$PROJECT_DIR$/dede/templets/templets_default.htm" />
-        <option value="$PROJECT_DIR$/dede/templets/templets_tagsource.htm" />
-        <option value="$PROJECT_DIR$/include/datalistcp.class.php" />
-        <option value="$PROJECT_DIR$/include/dedehtml2.class.php" />
-        <option value="$PROJECT_DIR$/include/dedetemplate.class.php" />
-        <option value="$PROJECT_DIR$/include/mail.class.php" />
-        <option value="$PROJECT_DIR$/include/taglib/arclistsg.lib.php" />
-        <option value="$PROJECT_DIR$/include/taglib/channelartlist.lib.php" />
-        <option value="$PROJECT_DIR$/include/taglib/infoguide.lib.php" />
-        <option value="$PROJECT_DIR$/member/config.php" />
-        <option value="$PROJECT_DIR$/member/resetpassword.php" />
-        <option value="$PROJECT_DIR$/dede/login.php" />
-        <option value="$PROJECT_DIR$/dede/archives_do.php" />
-        <option value="$PROJECT_DIR$/dede/co_add.php" />
-        <option value="$PROJECT_DIR$/dede/co_edit.php" />
-        <option value="$PROJECT_DIR$/dede/config.php" />
-        <option value="$PROJECT_DIR$/dede/content_tj.php" />
-        <option value="$PROJECT_DIR$/dede/file_manage_main.php" />
-        <option value="$PROJECT_DIR$/dede/friendlink_add.php" />
-        <option value="$PROJECT_DIR$/dede/media_add.php" />
-        <option value="$PROJECT_DIR$/dede/media_edit.php" />
-        <option value="$PROJECT_DIR$/dede/mychannel_add.php" />
-        <option value="$PROJECT_DIR$/dede/stepselect_main.php" />
-        <option value="$PROJECT_DIR$/dede/sys_safetest.php" />
-        <option value="$PROJECT_DIR$/dede/sys_sql_query.php" />
-        <option value="$PROJECT_DIR$/dede/sys_verifies.php" />
-        <option value="$PROJECT_DIR$/dede/inc/inc_archives_all.php" />
-        <option value="$PROJECT_DIR$/dede/inc/inc_archives_functions.php" />
-        <option value="$PROJECT_DIR$/include/arc.archives.class.php" />
-        <option value="$PROJECT_DIR$/include/arc.listview.class.php" />
-        <option value="$PROJECT_DIR$/include/arc.searchview.class.php" />
-        <option value="$PROJECT_DIR$/include/arc.sglistview.class.php" />
-        <option value="$PROJECT_DIR$/include/channelunit.func.php" />
-        <option value="$PROJECT_DIR$/include/customfields.func.php" />
-        <option value="$PROJECT_DIR$/include/dedecollection.class.php" />
-        <option value="$PROJECT_DIR$/include/dedecollection.func.php" />
-        <option value="$PROJECT_DIR$/include/dedehttpdown.class.php" />
-        <option value="$PROJECT_DIR$/include/memberlogin.class.php" />
-        <option value="$PROJECT_DIR$/include/userlogin.class.php" />
-        <option value="$PROJECT_DIR$/include/inc/inc_fun_funAdmin.php" />
-        <option value="$PROJECT_DIR$/include/taglib/arclist.lib.php" />
         <option value="$PROJECT_DIR$/include/taglib/likearticle.lib.php" />
         <option value="$PROJECT_DIR$/include/taglib/channel/img.lib.php" />
         <option value="$PROJECT_DIR$/include/tpllib/plus_spacenewart.php" />
-        <option value="$PROJECT_DIR$/member/index_do.php" />
         <option value="$PROJECT_DIR$/dede/templets/file_manage_main.htm" />
+        <option value="$PROJECT_DIR$/dede/templets/co_gather_start.htm" />
+        <option value="$PROJECT_DIR$/include/memberlogin.class.php" />
+        <option value="$PROJECT_DIR$/member/index_do.php" />
+        <option value="$PROJECT_DIR$/member/myinfo.php" />
+        <option value="$PROJECT_DIR$/member/reg_new.php" />
+        <option value="$PROJECT_DIR$/dede/inc/inc_archives_functions.php" />
+        <option value="$PROJECT_DIR$/plus/recommend.php" />
+        <option value="$PROJECT_DIR$/dede/archives_add.php" />
+        <option value="$PROJECT_DIR$/dede/archives_edit.php" />
+        <option value="$PROJECT_DIR$/dede/archives_sg_add.php" />
+        <option value="$PROJECT_DIR$/dede/archives_sg_edit.php" />
+        <option value="$PROJECT_DIR$/dede/article_edit.php" />
+        <option value="$PROJECT_DIR$/dede/article_add.php" />
+        <option value="$PROJECT_DIR$/dede/co_export.php" />
+        <option value="$PROJECT_DIR$/dede/content_list.php" />
+        <option value="$PROJECT_DIR$/dede/diy_add.php" />
+        <option value="$PROJECT_DIR$/dede/file_class.php" />
+        <option value="$PROJECT_DIR$/dede/friendlink_add.php" />
+        <option value="$PROJECT_DIR$/dede/member_scores.php" />
+        <option value="$PROJECT_DIR$/dede/mychannel_field_add.php" />
+        <option value="$PROJECT_DIR$/dede/mychannel_field_edit.php" />
+        <option value="$PROJECT_DIR$/dede/pic_view.php" />
+        <option value="$PROJECT_DIR$/dede/sys_admin_user_add.php" />
+        <option value="$PROJECT_DIR$/dede/sys_data.php" />
+        <option value="$PROJECT_DIR$/dede/sys_data_done.php" />
+        <option value="$PROJECT_DIR$/dede/sys_data_revert.php" />
+        <option value="$PROJECT_DIR$/dede/sys_info.php" />
+        <option value="$PROJECT_DIR$/dede/sys_safetest.php" />
+        <option value="$PROJECT_DIR$/dede/templets_main.php" />
+        <option value="$PROJECT_DIR$/dede/tpl.php" />
+        <option value="$PROJECT_DIR$/include/taglib/channelartlist.lib.php" />
+        <option value="$PROJECT_DIR$/dede/file_pic_view.php" />
+        <option value="$PROJECT_DIR$/dede/job_edit.php" />
+        <option value="$PROJECT_DIR$/include/customfields.func.php" />
+        <option value="$PROJECT_DIR$/dede/testenv.php" />
+        <option value="$PROJECT_DIR$/dede/update_guide.php" />
+        <option value="$PROJECT_DIR$/include/taglib/arclist.lib.php" />
+        <option value="$PROJECT_DIR$/include/taglib/arclistsg.lib.php" />
+        <option value="$PROJECT_DIR$/plus/jobs.php" />
+        <option value="$PROJECT_DIR$/dede/co_get_corule.php" />
+        <option value="$PROJECT_DIR$/include/arc.datalist.class.php" />
+        <option value="$PROJECT_DIR$/dede/sys_repair.php" />
+        <option value="$PROJECT_DIR$/include/common.func.php" />
+        <option value="$PROJECT_DIR$/include/uploadsafe.inc.php" />
+        <option value="$PROJECT_DIR$/include/FCKeditor/editor/dialog/dede_image.php" />
+        <option value="$PROJECT_DIR$/include/taglib/channel/softlinks.lib.php" />
+        <option value="$PROJECT_DIR$/member/myface.php" />
       </list>
     </option>
   </component>
@@ -203,8 +184,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -232,7 +213,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,7 +241,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
+              <option name="myItemId" value="uploads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,24 +252,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dede" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dede" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -297,12 +259,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/wamp/www" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/DedeEnt/uploads" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
   </component>
@@ -340,6 +317,25 @@
     <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">C:\Users\KGu\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\wamp\www" />
+          <option name="myCopyRoot" value="C:\wamp\www" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\wamp\www" />
+          <option name="myCopyRoot" value="C:\wamp\www" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -350,27 +346,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.310559" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30954996" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1913646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -390,606 +386,630 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/dedetemplate.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="471" column="77" selection-start="10638" selection-end="10638" vertical-scroll-proportion="-4.178571" vertical-offset="8832" max-vertical-offset="23579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/mail.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="276" column="9" selection-start="6773" selection-end="6773" vertical-scroll-proportion="-6.357143" vertical-offset="5066" max-vertical-offset="5738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/FCKeditor/editor/dialog/dede_mycode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="16" selection-start="2222" selection-end="2222" vertical-scroll-proportion="-4.678571" vertical-offset="1484" max-vertical-offset="2033">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/taglib/arclistsg.lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="80" selection-start="2416" selection-end="2416" vertical-scroll-proportion="-4.5" vertical-offset="1470" max-vertical-offset="5434">
-          <folding>
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select addta..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select ch.ad..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select `id`,..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select id,to..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select id,to..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select $arcl..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select $arcl..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select cache..." />
-            <marker date="1407121802062" expanded="true" signature="-1:-1" placeholder="Select id,ty..#@_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/taglib/channelartlist.lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="39" selection-start="824" selection-end="824" vertical-scroll-proportion="-0.42857143" vertical-offset="577" max-vertical-offset="1672">
-          <folding>
-            <marker date="1407121855887" expanded="true" signature="-1:-1" placeholder="Select id,ty..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/taglib/infoguide.lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="113" selection-start="458" selection-end="458" vertical-scroll-proportion="-4.5" vertical-offset="140" max-vertical-offset="1558">
-          <folding>
-            <marker date="1407121891157" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/member/resetpassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="53" selection-start="596" selection-end="596" vertical-scroll-proportion="-4.678571" vertical-offset="496" max-vertical-offset="2432">
-          <folding>
-            <marker date="1407122104678" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-            <marker date="1407122104678" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1407122104678" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/member/myface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="25" selection-start="759" selection-end="759" vertical-scroll-proportion="-3.642857" vertical-offset="658" max-vertical-offset="1045">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/member/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="40" selection-start="1356" selection-end="1356" vertical-scroll-proportion="-8.75" vertical-offset="705" max-vertical-offset="1957">
-          <folding>
-            <marker date="1407122016626" expanded="true" signature="-1:-1" placeholder="Select membe..#@_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="40" selection-start="794" selection-end="794" vertical-scroll-proportion="-4.178571" vertical-offset="396" max-vertical-offset="1843">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/archives_do.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="40" selection-start="2947" selection-end="2947" vertical-scroll-proportion="1.6071428" vertical-offset="1584" max-vertical-offset="9557">
-          <folding>
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select arc.i..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select arc.i..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select flag ..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select flag ..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select arc.i..." />
-            <marker date="1407122920655" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select tp.ch..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="Select id,ty..." />
-            <marker date="1407122920655" expanded="true" signature="-1:-1" placeholder="SELECT id FR..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/co_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="66" selection-start="4576" selection-end="4576" vertical-scroll-proportion="-6.535714" vertical-offset="2990" max-vertical-offset="3838">
-          <folding>
-            <marker date="1407122972058" expanded="true" signature="-1:-1" placeholder="Select nid,c..." />
-            <marker date="1407122972058" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/co_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="55" selection-start="1965" selection-end="1968" vertical-scroll-proportion="-4.5" vertical-offset="786" max-vertical-offset="3515">
-          <folding>
-            <marker date="1407123163710" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="153" selection-start="1135" selection-end="1135" vertical-scroll-proportion="3.642857" vertical-offset="691" max-vertical-offset="2337">
-          <folding>
-            <marker date="1407123215760" expanded="true" signature="-1:-1" placeholder="Select id,re..." />
-            <marker date="1407123215760" expanded="true" signature="-1:-1" placeholder="Select typen..." />
-            <marker date="1407123215760" expanded="true" signature="-1:-1" placeholder="Select `varn..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/content_tj.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="49" selection-start="869" selection-end="869" vertical-scroll-proportion="-4.178571" vertical-offset="472" max-vertical-offset="969">
-          <folding>
-            <marker date="1407123305156" expanded="true" signature="-1:-1" placeholder="Select count..." />
-            <marker date="1407123305156" expanded="true" signature="-1:-1" placeholder="Select count..." />
-            <marker date="1407123305156" expanded="true" signature="-1:-1" placeholder="Select count..." />
-            <marker date="1407123305156" expanded="true" signature="-1:-1" placeholder="Select id,ti..#@_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/file_manage_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="55" selection-start="476" selection-end="476" vertical-scroll-proportion="-4.678571" vertical-offset="306" max-vertical-offset="741">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/friendlink_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="55" selection-start="324" selection-end="324" vertical-scroll-proportion="-4.678571" vertical-offset="135" max-vertical-offset="1216">
-          <folding>
-            <marker date="1407123374898" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
-            <marker date="1407123374898" expanded="true" signature="-1:-1" placeholder="Insert Into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/media_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="92" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.071428575" vertical-offset="743" max-vertical-offset="1805">
-          <folding>
-            <marker date="1407123447558" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/media_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="66" selection-start="2776" selection-end="2776" vertical-scroll-proportion="1.4285715" vertical-offset="2548" max-vertical-offset="3933">
-          <folding>
-            <marker date="1407123517212" expanded="true" signature="-1:-1" placeholder="Select aid,u..#@_..." />
-            <marker date="1407123517212" expanded="true" signature="-1:-1" placeholder="update #@__u..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/mychannel_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="50" selection-start="310" selection-end="310" vertical-scroll-proportion="70.21429" vertical-offset="2346" max-vertical-offset="2698">
-          <folding>
-            <marker date="1407123555333" expanded="true" signature="-1:-1" placeholder="Select * fro..#@_..." />
-            <marker date="1407123555333" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
-            <marker date="1407123555333" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1407123555333" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/stepselect_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="45" selection-start="3591" selection-end="3591" vertical-scroll-proportion="72.85714" vertical-offset="4605" max-vertical-offset="5168">
-          <folding>
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select egrou..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select egrou..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
-            <marker date="1407123612660" expanded="true" signature="-1:-1" placeholder="Select egrou..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/sys_repair.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="8" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-4.178571" vertical-offset="947" max-vertical-offset="5491">
-          <folding>
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select count..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select addta..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select count..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select count..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select id, t..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select aid, ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select count..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select arc.i..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Insert Into ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select id,ad..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="Select aid, ..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1230745694000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/sys_safetest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="64" selection-start="2508" selection-end="2508" vertical-scroll-proportion="-4.321429" vertical-offset="1513" max-vertical-offset="2603">
-          <folding>
-            <marker date="1407123966821" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407123966821" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407123966821" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407123966821" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407123966821" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407123966821" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407123966821" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/sys_sql_query.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="44" selection-start="1994" selection-end="1994" vertical-scroll-proportion="37.17857" vertical-offset="2922" max-vertical-offset="3287">
-          <folding>
-            <marker date="1407124053902" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/sys_verifies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="61" selection-start="2452" selection-end="2452" vertical-scroll-proportion="-4.5" vertical-offset="1907" max-vertical-offset="8835">
-          <folding>
-            <marker date="1407124088606" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1407124088606" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1407124088606" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-            <marker date="1407124088606" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/inc/inc_archives_all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="26" selection-start="6796" selection-end="6796" vertical-scroll-proportion="21.285715" vertical-offset="4510" max-vertical-offset="7562">
-          <folding>
-            <marker date="1407124141879" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407124141879" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dede/inc/inc_archives_functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="648" column="10" selection-start="15210" selection-end="15210" vertical-scroll-proportion="-4.178571" vertical-offset="12195" max-vertical-offset="14972">
-          <folding>
-            <marker date="1407124379197" expanded="true" signature="-1:-1" placeholder="Select ispar..." />
-            <marker date="1407124379197" expanded="true" signature="-1:-1" placeholder="Select mid F..." />
-            <marker date="1407124379197" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-            <marker date="1407124379197" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-            <marker date="1407124379197" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-            <marker date="1407124379197" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/arc.archives.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="141" selection-start="6862" selection-end="6862" vertical-scroll-proportion="-9.25" vertical-offset="4396" max-vertical-offset="18791">
-          <folding>
-            <marker date="1407124645030" expanded="true" signature="-1:-1" placeholder="Select chann..." />
-            <marker date="1407124645030" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-            <marker date="1407124645030" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1407124645030" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-            <marker date="1407124645030" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-            <marker date="1407124645030" expanded="true" signature="-1:-1" placeholder="Select arc.i..." />
-            <marker date="1407124645030" expanded="true" signature="-1:-1" placeholder="select * fro..#@_..." />
-          </folding>
+        <state line="349" column="79" selection-start="9799" selection-end="9802" vertical-scroll-proportion="0.33333334" vertical-offset="5655" max-vertical-offset="16813">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/arc.listview.class.php">
+    <entry file="file://$PROJECT_DIR$/dede/templets/file_manage_main.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="832" column="46" selection-start="23311" selection-end="23311" vertical-scroll-proportion="-1.5" vertical-offset="15766" max-vertical-offset="18012">
-          <folding>
-            <marker date="1407124871791" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-            <marker date="1407124871791" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-            <marker date="1407124871791" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/arc.searchview.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="554" column="104" selection-start="12825" selection-end="12825" vertical-scroll-proportion="-4.535714" vertical-offset="10399" max-vertical-offset="14174">
-          <folding>
-            <marker date="1407124951132" expanded="true" signature="-1:-1" placeholder="Select keywo..." />
-            <marker date="1407124951132" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1407124951132" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-            <marker date="1407124951132" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407124951132" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/arc.sglistview.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="440" column="59" selection-start="11724" selection-end="11724" vertical-scroll-proportion="-4.214286" vertical-offset="8242" max-vertical-offset="18734">
-          <folding>
-            <marker date="1407125135452" expanded="true" signature="-1:-1" placeholder="Select id,to..." />
-            <marker date="1407125135452" expanded="true" signature="-1:-1" placeholder="Select id,to..." />
-            <marker date="1407125135452" expanded="true" signature="-1:-1" placeholder="Select tp.ty..." />
-            <marker date="1407125135452" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-            <marker date="1407125135452" expanded="true" signature="-1:-1" placeholder="Select tp.ty..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/channelunit.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="450" column="88" selection-start="10136" selection-end="10136" vertical-scroll-proportion="-6.571429" vertical-offset="8366" max-vertical-offset="8968">
-          <folding>
-            <marker date="1407125246577" expanded="true" signature="-1:-1" placeholder="Select keywo..#@_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/common.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="759" column="19" selection-start="13926" selection-end="13926" vertical-scroll-proportion="-4.535714" vertical-offset="14294" max-vertical-offset="16796">
-          <folding>
-            <marker date="1407043702550" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407043702550" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407043702550" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407043702550" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-            <marker date="1407043702550" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-            <marker date="1407043702550" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
-            <marker date="1407043702550" expanded="true" signature="-1:-1" placeholder="select ch.ma..#@_..." />
-            <marker date="1407043702550" expanded="true" signature="-1:-1" placeholder="select ch.ma..#@_..." />
-            <marker date="1407043702550" expanded="true" signature="-1:-1" placeholder="select maint..#@_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/customfields.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="75" selection-start="7200" selection-end="7200" vertical-scroll-proportion="-4.535714" vertical-offset="4661" max-vertical-offset="9481">
-          <folding>
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407125297325" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/dedecollection.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="788" column="79" selection-start="19264" selection-end="19264" vertical-scroll-proportion="-6.928571" vertical-offset="14778" max-vertical-offset="19171">
-          <folding>
-            <marker date="1407125655960" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/dedecollection.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="47" selection-start="3428" selection-end="3428" vertical-scroll-proportion="-4.214286" vertical-offset="3245" max-vertical-offset="11191">
-          <folding>
-            <marker date="1407125719509" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/dedehttpdown.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="377" column="50" selection-start="7057" selection-end="7057" vertical-scroll-proportion="1.4285715" vertical-offset="7203" max-vertical-offset="10032">
+        <state line="50" column="8" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="6222">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/memberlogin.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="61" selection-start="419" selection-end="419" vertical-scroll-proportion="-0.4642857" vertical-offset="329" max-vertical-offset="5795">
+        <state line="47" column="62" selection-start="856" selection-end="856" vertical-scroll-proportion="-0.17811409" vertical-offset="952" max-vertical-offset="5185">
           <folding>
-            <marker date="1407125828421" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-            <marker date="1407125828421" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
-            <marker date="1407125828421" expanded="true" signature="-1:-1" placeholder="select sum(f..." />
-            <marker date="1407125828421" expanded="true" signature="-1:-1" placeholder="Select mid,m..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/uploadsafe.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="16" selection-start="1720" selection-end="1720" vertical-scroll-proportion="-4.535714" vertical-offset="956" max-vertical-offset="2945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/userlogin.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="48" selection-start="233" selection-end="233" vertical-scroll-proportion="-4.214286" vertical-offset="129" max-vertical-offset="6213">
-          <folding>
-            <marker date="1407125913327" expanded="true" signature="-1:-1" placeholder="Select id Fr..#@_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/inc/inc_fun_funAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="18" selection-start="724" selection-end="724" vertical-scroll-proportion="-4.357143" vertical-offset="752" max-vertical-offset="3382">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/FCKeditor/editor/dialog/dede_image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="12" selection-start="721" selection-end="721" vertical-scroll-proportion="-4.535714" vertical-offset="424" max-vertical-offset="7752">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/taglib/arclist.lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="333" column="101" selection-start="10858" selection-end="10858" vertical-scroll-proportion="-4.535714" vertical-offset="6200" max-vertical-offset="8284">
-          <folding>
-            <marker date="1407126097584" expanded="true" signature="3568:3633" placeholder="Select id Fr..." />
-            <marker date="1407126097584" expanded="true" signature="5169:5264" placeholder="Select `id`,..." />
-            <marker date="1407126097584" expanded="true" signature="5516:5634" placeholder="Select id,to..." />
-            <marker date="1407126097584" expanded="true" signature="5804:5914" placeholder="Select id,to..." />
-            <marker date="1407126097584" expanded="true" signature="7902:7962" placeholder="Select addta..." />
-            <marker date="1407126097584" expanded="true" signature="8310:8546" placeholder="Select arc.*..." />
-            <marker date="1407126097584" expanded="true" signature="9086:9335" placeholder="Select arc.*..." />
-            <marker date="1407126097584" expanded="true" signature="13404:13474" placeholder="Select cache..." />
-            <marker date="1407126097584" expanded="true" signature="13514:13611" placeholder="Select cache..." />
-            <marker date="1407126097584" expanded="true" signature="13899:14027" placeholder="Select id,ty..#@_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/taglib/likearticle.lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="101" selection-start="4048" selection-end="4048" vertical-scroll-proportion="-4.214286" vertical-offset="2352" max-vertical-offset="3553">
-          <folding>
-            <marker date="1407126135146" expanded="true" signature="1961:2217" placeholder="Select arc.*..." />
-            <marker date="1407126135146" expanded="true" signature="2343:2581" placeholder="Select arc.*..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/taglib/channel/img.lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="17" selection-start="2169" selection-end="2169" vertical-scroll-proportion="-7.928571" vertical-offset="1507" max-vertical-offset="3021">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/tpllib/plus_spacenewart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="56" selection-start="1262" selection-end="1262" vertical-scroll-proportion="-4.535714" vertical-offset="614" max-vertical-offset="1520">
-          <folding>
-            <marker date="1407126236675" expanded="true" signature="326:588" placeholder="Select arc.*..." />
+            <marker date="1407163269290" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407163269290" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407163269290" expanded="true" signature="-1:-1" placeholder="select sum(f..." />
+            <marker date="1407163269290" expanded="true" signature="-1:-1" placeholder="Select mid,m..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/member/index_do.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="68" selection-start="2427" selection-end="2427" vertical-scroll-proportion="8.607142" vertical-offset="2711" max-vertical-offset="3078">
+        <state line="54" column="113" selection-start="939" selection-end="939" vertical-scroll-proportion="-11.769231" vertical-offset="612" max-vertical-offset="2754">
           <folding>
-            <marker date="1407126437447" expanded="true" signature="1054:1116" placeholder="Select mid F..." />
+            <marker date="1407163722717" expanded="true" signature="-1:-1" placeholder="Select mid F..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/member/myinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="16" selection-start="820" selection-end="820" vertical-scroll-proportion="-4.678571" vertical-offset="705" max-vertical-offset="1425">
+        <state line="44" column="113" selection-start="917" selection-end="917" vertical-scroll-proportion="-7.6923075" vertical-offset="548" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/member/reg_new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="8" selection-start="846" selection-end="846" vertical-scroll-proportion="-4.678571" vertical-offset="724" max-vertical-offset="2033">
+        <state line="45" column="105" selection-start="943" selection-end="943" vertical-scroll-proportion="-13.576923" vertical-offset="412" max-vertical-offset="1819">
           <folding>
-            <marker date="1407113872395" expanded="true" signature="1038:1092" placeholder="Select mid F..." />
-            <marker date="1407113872395" expanded="true" signature="1219:1275" placeholder="Select mid F..." />
-            <marker date="1407113872395" expanded="true" signature="1927:2296" placeholder="INSERT INTO ..." />
+            <marker date="1407163885385" expanded="true" signature="-1:-1" placeholder="Select mid F..." />
+            <marker date="1407163885385" expanded="true" signature="-1:-1" placeholder="Select mid F..." />
+            <marker date="1407163885385" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dede/templets/file_manage_main.htm">
+    <entry file="file://$PROJECT_DIR$/dede/inc/inc_archives_functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="8" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-5.678571" vertical-offset="810" max-vertical-offset="6954">
+        <state line="654" column="61" selection-start="15419" selection-end="15419" vertical-scroll-proportion="-7.3846154" vertical-offset="10926" max-vertical-offset="13396">
+          <folding>
+            <marker date="1407164614593" expanded="true" signature="-1:-1" placeholder="Select ispar..." />
+            <marker date="1407164614593" expanded="true" signature="-1:-1" placeholder="Select mid F..." />
+            <marker date="1407164614593" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
+            <marker date="1407164614593" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
+            <marker date="1407164614593" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407164614593" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plus/recommend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="105" selection-start="696" selection-end="696" vertical-scroll-proportion="-9.653846" vertical-offset="225" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dede/templets/co_gather_start.htm">
+    <entry file="file://$PROJECT_DIR$/dede/archives_add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="819" selection-end="819" vertical-scroll-proportion="0.37570623" vertical-offset="285" max-vertical-offset="2546">
+        <state line="152" column="53" selection-start="3394" selection-end="3394" vertical-scroll-proportion="-11.961538" vertical-offset="2273" max-vertical-offset="3808">
+          <folding>
+            <marker date="1407165401668" expanded="true" signature="-1:-1" placeholder="Select chann..." />
+            <marker date="1407165401668" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407165401668" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407165401668" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407165401668" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+            <marker date="1407165401668" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407165401668" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407165401668" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/archives_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="53" selection-start="3540" selection-end="3540" vertical-scroll-proportion="-10.307693" vertical-offset="2282" max-vertical-offset="3876">
+          <folding>
+            <marker date="1407165434221" expanded="true" signature="-1:-1" placeholder="Select ch.ty..." />
+            <marker date="1407165434221" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407165434221" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/archives_sg_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="48" selection-start="2817" selection-end="2817" vertical-scroll-proportion="-7.6923075" vertical-offset="2044" max-vertical-offset="3213">
+          <folding>
+            <marker date="1407165461282" expanded="true" signature="-1:-1" placeholder="Select chann..." />
+            <marker date="1407165461282" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407165461282" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+            <marker date="1407165461282" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407165461282" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/archives_sg_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="48" selection-start="2675" selection-end="2675" vertical-scroll-proportion="-7.423077" vertical-offset="1830" max-vertical-offset="2941">
+          <folding>
+            <marker date="1407165474535" expanded="true" signature="-1:-1" placeholder="Select ch.*,..." />
+            <marker date="1407165474535" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
+            <marker date="1407165474535" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/article_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="48" selection-start="3630" selection-end="3630" vertical-scroll-proportion="-7.6923075" vertical-offset="2350" max-vertical-offset="3961">
+          <folding>
+            <marker date="1407165528807" expanded="true" signature="-1:-1" placeholder="Select ch.ty..." />
+            <marker date="1407165528807" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407165528807" expanded="true" signature="-1:-1" placeholder="update #@__a..." />
+            <marker date="1407165528807" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/article_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="43" selection-start="613" selection-end="613" vertical-scroll-proportion="-7.3846154" vertical-offset="165" max-vertical-offset="4199">
+          <folding>
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="Select chann..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407165628588" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/co_export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="52" selection-start="4981" selection-end="4981" vertical-scroll-proportion="-7.5384617" vertical-offset="2915" max-vertical-offset="5559">
+          <folding>
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Select chann..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Select ch.* ..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407165682733" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/content_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="41" selection-start="3691" selection-end="3691" vertical-scroll-proportion="-7.3846154" vertical-offset="2494" max-vertical-offset="3213">
+          <folding>
+            <marker date="1407166105058" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407166105058" expanded="true" signature="-1:-1" placeholder="Select id,ty..." />
+            <marker date="1407166105058" expanded="true" signature="-1:-1" placeholder="Select arc.i..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/diy_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="38" selection-start="511" selection-end="511" vertical-scroll-proportion="-11.461538" vertical-offset="59" max-vertical-offset="1462">
+          <folding>
+            <marker date="1407166210687" expanded="true" signature="-1:-1" placeholder="Select diyid..#@_..." />
+            <marker date="1407166210687" expanded="true" signature="-1:-1" placeholder="Select * fro..#@_..." />
+            <marker date="1407166210687" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1407166210687" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/file_class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="47" selection-start="3806" selection-end="3806" vertical-scroll-proportion="-7.3846154" vertical-offset="3106" max-vertical-offset="4046">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/friendlink_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="57" selection-start="844" selection-end="844" vertical-scroll-proportion="-3.1923077" vertical-offset="512" max-vertical-offset="1088">
+          <folding>
+            <marker date="1407166675987" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+            <marker date="1407166675987" expanded="true" signature="-1:-1" placeholder="Insert Into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/member_scores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="41" selection-start="922" selection-end="922" vertical-scroll-proportion="-8.769231" vertical-offset="265" max-vertical-offset="867">
+          <folding>
+            <marker date="1407166722978" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407166722978" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1407166722978" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/mychannel_field_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="40" selection-start="550" selection-end="550" vertical-scroll-proportion="-7.3846154" vertical-offset="216" max-vertical-offset="2703">
+          <folding>
+            <marker date="1407166822457" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407166822457" expanded="true" signature="-1:-1" placeholder="Select field..." />
+            <marker date="1407166822457" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+            <marker date="1407166822457" expanded="true" signature="-1:-1" placeholder="Select '#@__..." />
+            <marker date="1407166822457" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/mychannel_field_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="58" selection-start="1106" selection-end="1106" vertical-scroll-proportion="-8.346154" vertical-offset="667" max-vertical-offset="2924">
+          <folding>
+            <marker date="1407166881831" expanded="true" signature="-1:-1" placeholder="Select field..." />
+            <marker date="1407166881831" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407166881831" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1407166881831" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/pic_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="43" selection-start="1008" selection-end="1008" vertical-scroll-proportion="17.807692" vertical-offset="1194" max-vertical-offset="2771">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/sys_admin_user_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="457" selection-end="457" vertical-scroll-proportion="9.884615" vertical-offset="546" max-vertical-offset="1122">
+          <folding>
+            <marker date="1407167014510" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407167014510" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407167014510" expanded="true" signature="-1:-1" placeholder="Insert Into ..." />
+            <marker date="1407167014510" expanded="true" signature="-1:-1" placeholder="Select id,ty..#@_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/sys_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="83" selection-start="1733" selection-end="1733" vertical-scroll-proportion="-7.1153846" vertical-offset="1243" max-vertical-offset="1819">
+          <folding>
+            <marker date="1407167072804" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+            <marker date="1407167072804" expanded="true" signature="-1:-1" placeholder="Select count..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/sys_data_done.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="48" selection-start="1073" selection-end="1073" vertical-scroll-proportion="31.961538" vertical-offset="2004" max-vertical-offset="6103">
+          <folding>
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167101238" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/sys_data_revert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="48" selection-start="336" selection-end="336" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/sys_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="40" selection-start="268" selection-end="268" vertical-scroll-proportion="14.153846" vertical-offset="606" max-vertical-offset="1241">
+          <folding>
+            <marker date="1407167169654" expanded="true" signature="-1:-1" placeholder="Select varna..." />
+            <marker date="1407167169654" expanded="true" signature="-1:-1" placeholder="Select aid F..." />
+            <marker date="1407167169654" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/FCKeditor/editor/dialog/dede_mycode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="10" selection-start="2493" selection-end="2493" vertical-scroll-proportion="1.3993056" vertical-offset="758" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/taglib/channelartlist.lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="24" selection-start="1219" selection-end="1219" vertical-scroll-proportion="1.2986112" vertical-offset="0" max-vertical-offset="1496">
+          <folding>
+            <marker date="1407167937664" expanded="true" signature="-1:-1" placeholder="Select id,ty..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="170" column="52" selection-start="4388" selection-end="4388" vertical-scroll-proportion="-1.3315972" vertical-offset="3657" max-vertical-offset="4641">
+          <folding>
+            <marker date="1407167517967" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167517967" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167517967" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167517967" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407167517967" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407167517967" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167517967" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/templets_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="289" selection-end="289" vertical-scroll-proportion="0.265625" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/sys_safetest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="5" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.35069445" vertical-offset="1753" max-vertical-offset="2329">
+          <folding>
+            <marker date="1407167304887" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407167304887" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167304887" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407167304887" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407167304887" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407167304887" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407167304887" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/file_pic_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="13" selection-start="1126" selection-end="1126" vertical-scroll-proportion="-14.884615" vertical-offset="429" max-vertical-offset="2652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/job_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="150" selection-end="150" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="833">
+          <folding>
+            <marker date="1407173597870" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407173597870" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407173597870" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/customfields.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="81" selection-start="5972" selection-end="5972" vertical-scroll-proportion="-11.461538" vertical-offset="3170" max-vertical-offset="8483">
+          <folding>
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174060151" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/testenv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="42" selection-start="2010" selection-end="2010" vertical-scroll-proportion="-7.5384617" vertical-offset="926" max-vertical-offset="1547">
+          <folding>
+            <marker date="1407174270894" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174270894" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/update_guide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="68" selection-start="997" selection-end="997" vertical-scroll-proportion="6.0384617" vertical-offset="990" max-vertical-offset="8075">
+          <folding>
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407174666418" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/taglib/arclist.lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="340" column="141" selection-start="11230" selection-end="11230" vertical-scroll-proportion="-7.6923075" vertical-offset="5580" max-vertical-offset="7412">
+          <folding>
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select `id`,..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select id,to..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select id,to..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select cache..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select cache..." />
+            <marker date="1407174704874" expanded="true" signature="-1:-1" placeholder="Select id,ty..#@_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plus/jobs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="194" selection-end="194" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="425">
+          <folding>
+            <marker date="1407175146471" expanded="true" signature="-1:-1" placeholder="select * Fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/co_get_corule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="43" selection-start="977" selection-end="977" vertical-scroll-proportion="-7.6923075" vertical-offset="429" max-vertical-offset="1649">
+          <folding>
+            <marker date="1407175177141" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407175177141" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dede/sys_repair.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="30" selection-start="1852" selection-end="1852" vertical-scroll-proportion="-13.423077" vertical-offset="603" max-vertical-offset="4913">
+          <folding>
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select id, t..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select aid, ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select count..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select arc.i..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Insert Into ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select id,ad..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="Select aid, ..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180908749" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/uploadsafe.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="49" selection-start="3204" selection-end="3204" vertical-scroll-proportion="-1.5" vertical-offset="1831" max-vertical-offset="2635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/common.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="436" column="74" selection-start="7750" selection-end="7750" vertical-scroll-proportion="-12.189236" vertical-offset="14433" max-vertical-offset="15028">
+          <folding>
+            <marker date="1407180943678" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1407180943678" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180943678" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1407180943678" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
+            <marker date="1407180943678" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
+            <marker date="1407180943678" expanded="true" signature="-1:-1" placeholder="Select arc.*..." />
+            <marker date="1407180943678" expanded="true" signature="-1:-1" placeholder="select ch.ma..#@_..." />
+            <marker date="1407180943678" expanded="true" signature="-1:-1" placeholder="select ch.ma..#@_..." />
+            <marker date="1407180943678" expanded="true" signature="-1:-1" placeholder="select maint..#@_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/FCKeditor/editor/dialog/dede_image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="47" selection-start="756" selection-end="756" vertical-scroll-proportion="0.3472222" vertical-offset="293" max-vertical-offset="6936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/taglib/channel/softlinks.lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="39" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.4809028" vertical-offset="964" max-vertical-offset="2312">
+          <folding>
+            <marker date="1407181358220" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1407181358220" expanded="true" signature="-1:-1" placeholder="select downl..#@_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/taglib/arclistsg.lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="103" selection-start="6795" selection-end="6795" vertical-scroll-proportion="0.3472222" vertical-offset="3285" max-vertical-offset="4862">
+          <folding>
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select id Fr..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select addta..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select ch.ad..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select `id`,..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select id,to..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select id,to..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select $arcl..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select $arcl..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select cache..." />
+            <marker date="1407174720499" expanded="true" signature="-1:-1" placeholder="Select id,ty..#@_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/arc.datalist.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="46" selection-start="2675" selection-end="2675" vertical-scroll-proportion="-19.807692" vertical-offset="1236" max-vertical-offset="5746">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member/myface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="30" selection-start="208" selection-end="208" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plus/guestbook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="35.384617" vertical-offset="920" max-vertical-offset="1649">
+          <folding>
+            <marker date="1407129317940" expanded="true" signature="1178:1226" placeholder="Select msg F..." />
+            <marker date="1407129317940" expanded="true" signature="1349:1573" placeholder="INSERT INTO ..." />
+            <marker date="1407129317940" expanded="true" signature="1726:1838" placeholder="..." />
+            <marker date="1407129317940" expanded="false" signature="1782:1813" placeholder="..." />
+            <marker date="1407129317940" expanded="false" signature="2020:2064" placeholder="..." />
+            <marker date="1407129317940" expanded="true" signature="2318:2364" placeholder="select * fro..." />
+            <marker date="1407129317940" expanded="true" signature="2381:2443" placeholder="select * fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/plus/guestbook.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="22" selection-start="1883" selection-end="1883" vertical-scroll-proportion="2.1545138" vertical-offset="102" max-vertical-offset="3944">
           <folding />
         </state>
       </provider>

@@ -2,7 +2,7 @@
 require(dirname(__FILE__)."/config.php");
 CheckPurview('info_Lang');
 if(empty($dopost)) $dopost = '';
-$id = isset($id) ? ereg_replace('[^0-9]','',$id) : 0;
+$id = isset($id) ? preg_replace("#[^0-9]#",'',$id) : 0;
 $ENV_GOBACK_URL = empty($_COOKIE['ENV_GOBACK_URL']) ? "job_main.php" : $_COOKIE['ENV_GOBACK_URL'];
 
 if($dopost=='delete')

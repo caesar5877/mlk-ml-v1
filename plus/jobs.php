@@ -3,7 +3,7 @@ require_once(dirname(__FILE__)."/../include/common.inc.php");
 include_once(DEDEINC.'/arc.datalist.class.php');
 require_once(DEDEINC.'/userlang.inc.php');
 
-$cfg_df_style = ereg_replace("[/:\\]", '', $cfg_df_style);
+$cfg_df_style = preg_replace("#[\/:\\\\]#", '', $cfg_df_style);
 $tmpfile = DEDETEMPDIR.'/'.$cfg_df_style.'/'.$lang.'/jobs_list.htm';
 $tmpfiledf = DEDETEMPDIR.'/'.$cfg_df_style.'/en/jobs_list.htm';
 if(!file_exists($tmpfile))

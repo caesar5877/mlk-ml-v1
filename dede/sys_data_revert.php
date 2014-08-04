@@ -7,11 +7,11 @@ $dh = dir($bkdir);
 $structfile = "没找到数据结构文件";
 while(($filename=$dh->read()) !== false)
 {
-	if(!ereg('txt$',$filename))
+    if(!preg_match("#txt$#", $filename))
 	{
 		continue;
 	}
-	if(ereg('tables_struct',$filename))
+    if(preg_match("#tables_struct#", $filename))
 	{
 		$structfile = $filename;
 	}

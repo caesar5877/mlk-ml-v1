@@ -41,7 +41,7 @@ function ListPic($truePath,$nowPath)
 	echo("<tr align='center'>\n");
 	while($filename=$dh->read())
 	{
-		if(!ereg("\.$",$filename))
+        if(!preg_match("#\.$#", $filename))
 		{
 			$fullName = $truePath."/".$filename;
 			$fileUrl =  $nowPath."/".$filename;

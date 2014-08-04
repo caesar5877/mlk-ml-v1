@@ -82,7 +82,7 @@ $dsql->SetQuery("Show Tables");
 $dsql->Execute('t');
 while($row = $dsql->GetArray('t',MYSQL_BOTH))
 {
-	if(ereg("^{$cfg_dbprefix}",$row[0])||in_array($row[0],$channelTables))
+    if(preg_match("#^{$cfg_dbprefix}#", $row[0])||in_array($row[0],$channelTables))
 	{
 		$dedeSysTables[] = $row[0];
 	}

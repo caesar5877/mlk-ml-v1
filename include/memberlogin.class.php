@@ -45,7 +45,7 @@ function CheckUserID($uid,$msgtitle='Login ID',$ckhas=true)
 			}
 			else
 			{
-				if(eregi("[^0-9a-z@\.-]",$ck_uid[$i]))
+                if(preg_match("/[^0-9a-z@\.-]/i",$ck_uid[$i]))
 				{
 					return $msgtitle.' '.GetLang('err_symbols');
 				}

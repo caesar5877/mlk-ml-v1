@@ -181,7 +181,7 @@ else
 			else if($itemName == 'pubdate')
 			{
 				$pubdate = trim($ctag->GetInnerText());
-				if(ereg("[^0-9]",$pubdate))
+                if(preg_match("#[^0-9]#", $pubdate))
 				{
 					$pubdate = $sortrank = GetMkTime($pubdate);
 				}

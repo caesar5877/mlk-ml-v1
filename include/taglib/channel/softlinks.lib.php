@@ -66,7 +66,7 @@ function ch_softlinks_all($fvalue,&$ctag,&$refObj,&$row)
 			else
 			{
 				//支持http,迅雷下载,ftp,flashget
-				if(!eregi('^http://|^thunder://|^ftp://|^flashget://',$links))
+				if(!preg_match("#^http://|^thunder://|^ftp://|^flashget://#i",$links))
 				{
 					$links = $GLOBALS['cfg_mainsite'].$links;
 				}
@@ -87,8 +87,8 @@ function ch_softlinks_all($fvalue,&$ctag,&$refObj,&$row)
 	//启用镜像功能的情况
 	if($row['ismoresite']==1 && !empty($row['sites']) && isset($firstLink))
 	{
-		$firstLink = @eregi_replace($GLOBALS['cfg_basehost'],'',$firstLink);
-		$row['sites'] = ereg_replace("[\r\n]{1,}","\n",$row['sites']);
+		$firstLink = @preg_replace($GLOBALS['cfg_basehost'],'',$firstLink);
+		$row['sites'] = preg_replace("#[\r\n]{1,}#","\n",$row['sites']);
 		$sites = explode("\n",trim($row['sites']));
 		foreach($sites as $site)
 		{

@@ -27,7 +27,7 @@ if($dopost=='upload')
 			$imgfile_type = ${'imgfile'.$i.'_type'};
 		}
 	
-		if(!eregi("\.(jpg|gif|png|bmp)$",$imgfile_name)) {
+		if(!preg_match("#\.(jpg|gif|png|bmp)$#i",$imgfile_name)) {
 			continue;
 		}
 	
