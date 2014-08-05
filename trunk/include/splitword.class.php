@@ -33,9 +33,9 @@ class SplitWord
   //------------------------------
   //php4构造函数
   //------------------------------
-  function SplitWord($loaddic=true){
-  	$this->__construct($loaddic);
-  }
+  //function SplitWord($loaddic=true){
+  //	$this->__construct($loaddic);
+  //}
   //------------------------------
   //php5构造函数
   //------------------------------

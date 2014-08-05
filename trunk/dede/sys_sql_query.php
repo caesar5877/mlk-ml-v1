@@ -131,7 +131,7 @@ else if($dopost=="query")
 	{
 		//普通的SQL语句
 		$sqlquery = str_replace("\r","",$sqlquery);
-		$sqls = split(";[ \t]{0,}\n",$sqlquery);
+		$sqls = preg_split("#;[ \t]{0,}\n#",$sqlquery);
 		$nerrCode = ""; $i=0;
 		foreach($sqls as $q)
 		{

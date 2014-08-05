@@ -38,7 +38,7 @@ install/index.php";
 
 $adminDir = preg_replace("#(.*)[\/\\\\]#", "", dirname(__FILE__));
 $safefile = trim(str_replace('dede/',$adminDir.'/',$safefile));
-$safefiles = split("[\r\n]{1,}",$safefile);
+$safefiles = preg_split("#[\r\n]{1,}#", $safefile);
 
 function TestOneFile($f)
 {
