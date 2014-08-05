@@ -18,7 +18,7 @@ function GetPrePath($nowPath)
 	}
 	else
 	{
-		$dirs = split("/",$nowPath);
+		$dirs = preg_split("#/#",$nowPath);
 		$nowPath = "";
 		for($i=1;$i<count($dirs)-1;$i++)
 		{

@@ -10,7 +10,7 @@ if($dopost=="add")
 	$dtime = time();
 	if(is_uploaded_file($logoimg))
 	{
-		$names = split("\.",$logoimg_name);
+		$names = preg_split("#\.#",$logoimg_name);
 		$shortname = ".".$names[count($names)-1];
         if(!preg_match("#(jpg|gif|png)$#", $shortname))
 		{
