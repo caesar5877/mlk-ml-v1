@@ -1,0 +1,91 @@
+﻿
+
+
+
+if($litpic=='ddfirst' && !eregi("^http://",$oldname))
+if($litpic=='ddfirst' && !preg_match("#^http:\/\/#i", $oldname))
+
+!eregi('^http:',$faceurl))
+!preg_match("#^http:\'#i",$faceurl)
+
+if($litpic!='' && !ereg('p',$flag))
+if($litpic!='' && !preg_match("#p#", $flag))
+
+if(ereg('^http://',$geturl))
+if(preg_match("#^http:\/\/#", $geturl))
+
+if(ereg('^BASE64:',$notes))
+if(preg_match("#^BASE64:#", $notes))
+
+
+
+if(ereg("[^0-9]",$pubdate))
+if(preg_match("#[^0-9]#", $pubdate))
+
+!ereg('  form  ', $f)
+!preg_match("#  form  #", $f)
+
+ereg("  [^0-9-]  ",$diyid)
+preg_match("#  [^0-9-]  #", $diyid)
+
+!ereg("  \.\.  ",$mpath)
+!preg_match("#  \.\.  #", $mpath)
+
+if(ereg("  \.(jpg|gif|png)$  ",$fileName)) return 1;
+if(preg_match("#  \.(jpg|gif|png)$  #", $fileName)) return 1;
+
+$truePath = ereg_replace("/$","",ereg_replace("\\{1,}","/",trim($truePath)));
+$truePath = preg_replace("#\/$#", "", preg_replace("#\\\\{1,}#", "/", trim($truePath)));
+
+if(ereg("  [^0-9a-zA-Z_@!\.-]  ",$pwd) || ereg("[^0-9a-zA-Z_@!\.-]",$userid))
+if(preg_match("#  [^0-9a-zA-Z_@!\.-]  #", $pwd) || preg_match("#[^0-9a-zA-Z_@!\.-]#", $userid))
+
+if(ereg('  data/  ',$cfg_tplcache_dir) && file_exists($d) && is_dir($d))
+if(preg_match("#  data\/  #", $cfg_tplcache_dir) && file_exists($d) && is_dir($d))
+
+$truePath = ereg_replace("  /$  ","",     ereg_replace("  \\{1,}  ",     "/",trim($truePath)));
+$truePath = preg_replace("#  \/$  #", "", preg_replace("#  \\\\{1,}  #", "/",trim($truePath)));
+
+$nowPath = ereg_replace("/$","",ereg_replace("/{1,}","/",trim($nowPath)));
+$nowPath = preg_replace("#\/$#", "", preg_replace("#\/{1,}#", "/", trim($nowPath)));
+
+
+$addvarDir = ereg_replace("/".$addvarDirs[count($addvarDirs)-1]."$","",$addvar);
+$addvarDir = preg_replace("#\/".$addvarDirs[count($addvarDirs)-1]."$#", "", $addvar);
+
+$needDir = ereg_replace("/{1,}","/",$needDir);
+$makeFile = preg_replace("/\/{1,}/", "/", $makeFile);
+
+$dirname = trim(ereg_replace("[\\/]{1,}",'/',$filename));
+$dirname = trim(preg_replace("#[\\\\\/]{1,}#", '/', $filename));
+
+$dirname = ereg_replace("([^/]*)$","",$dirname);
+$dirname = preg_replace("#([^\/]*)$#","",$dirname);
+
+$fieldset = ereg_replace("  [\r\n]{1,}   ","\r\n",$fieldset);
+$fieldset = preg_replace("# [\r\n]{1,}  #", "\r\n", $fieldset);
+
+
+$sql = eregi_replace('ENGINE=MyISAM','TYPE=MyISAM',$sql);
+$sql = preg_replace('#ENGINE=MyISAM#i', 'TYPE=MyISAM', $sql);
+
+$curdir = GetDirName( eregi_replace("  ^dede/  ",$adminDir.'/',$filename) );
+$curdir = GetDirName( preg_replace("#  ^dede/  #i", $adminDir.'/', $filename) );
+
+$row[1] = eregi_replace("  AUTO_INCREMENT=([0-9]{1,})[ \r\n\t]{1,}  ","",$row[1]);
+$row[1] = preg_replace("#  AUTO_INCREMENT=([0-9]{1,})[ \r\n\t]{1,}  #i", "", $row[1]);
+
+$sql = eregi_replace('  TYPE=MyISAM  '  ,$sql41tmp,$sql);
+$sql = preg_replace('#  TYPE=MyISAM  #i', $sql41tmp, $sql);
+
+if(eregi("\.".$cfg_softtype."$",$upfile_name)
+if(preg_match("#\.".$cfg_softtype."+\.".$cfg_softtype."$#i", $upfile_name))
+
+
+eregi     ("  \.".$cfg_softtype."$  ",$upfile_name)
+preg_match("# \.".$cfg_softtype."$#i",$upfile_name)
+
+
+eregi     ('   audio|media|video    ',$upfile_type)
+preg_match('#  audio|media|video  #i',$upfile_type)
+
